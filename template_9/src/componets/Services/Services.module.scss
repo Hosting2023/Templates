@@ -1,0 +1,42 @@
+@import "../../styles/vars.scss";
+
+.services {
+   margin-top: 50px;
+
+   .wrapper {
+      .title {
+         text-align: center;
+         font-size: 1.6rem;
+
+      }
+
+      .services_content {
+         .services_blocks {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+         }
+
+         .imgs {
+            margin-top: 40px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            img {
+               width: 100%;
+            }
+         }
+      }
+   }
+}
+
+
+@media (max-width:560px) {
+   .services .wrapper .title {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+   }
+}

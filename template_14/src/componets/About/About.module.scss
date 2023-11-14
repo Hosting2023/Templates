@@ -1,0 +1,88 @@
+@import "../../styles/vars.scss";
+
+
+
+.about {
+   margin-top: 120px;
+
+   .wrapper {
+      .about_content {
+         border-radius: 100px;
+         padding: 40px;
+         text-align: center;
+         color: #FFF;
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         border: 19.682px solid #FFF;
+         background: linear-gradient(310deg, #9955DE 0%, #9B63FB 100%);
+         box-shadow: 39.36386489868164px 39.36386489868164px 147.61448669433594px 0px rgba(122, 78, 192, 0.30), -39.36386489868164px 39.36386489868164px 147.61448669433594px 0px rgba(122, 78, 192, 0.30), 0px -49.204830169677734px 147.61448669433594px 0px rgba(122, 78, 192, 0.30);
+
+         .about_content_img {
+            width: 50px;
+            margin: 0 auto;
+            height: 50px;
+            border-radius: 10px;
+            border: 4.92px solid #C39AFA;
+            background: #8239FB;
+            padding: 5px;
+
+
+         }
+
+         .about_title {
+            color: #FFF;
+
+            span {
+               color: #FFB80A;
+
+            }
+
+         }
+      }
+   }
+}
+
+@media(max-width:590px) {
+   .about {
+         margin-top: 120px;
+   
+         .wrapper {
+            padding: 0 10px;
+            .about_content {
+               border-radius: 40px;
+               padding: 10px;
+               text-align: center;
+               color: #FFF;
+               display: flex;
+               flex-direction: column;
+               gap: 30px;
+               border: 10.682px solid #FFF;
+               background: linear-gradient(310deg, #9955DE 0%, #9B63FB 100%);
+               box-shadow: 39.36386489868164px 39.36386489868164px 147.61448669433594px 0px rgba(122, 78, 192, 0.30), -39.36386489868164px 39.36386489868164px 147.61448669433594px 0px rgba(122, 78, 192, 0.30), 0px -49.204830169677734px 147.61448669433594px 0px rgba(122, 78, 192, 0.30);
+   
+               .about_content_img {
+                  width: 50px;
+                  margin: 0 auto;
+                  height: 50px;
+                  border-radius: 10px;
+                  border: 4.92px solid #C39AFA;
+                  background: #8239FB;
+                  padding: 5px;
+   
+   
+               }
+   
+               .about_title {
+                  color: #FFF;
+   
+                  span {
+                     color: #FFB80A;
+   
+                  }
+   
+               }
+            }
+         }
+      }
+}

@@ -1,0 +1,292 @@
+.filter{
+    padding: 205px 0 121px 151px;
+    
+    background: #C8E9F7;
+    
+    >div {
+        background: no-repeat url('../../public/broom.png');
+        background-position: 107% -400%;
+    }
+
+    h2 {
+        margin-bottom: 68px;
+        font-size: 60px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.filterContent{
+   .filterWrap {
+    margin-bottom: 92px;
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+}
+
+.filterCategory{
+    margin-bottom: 60px;
+    margin-left: 70px;
+    padding: 56px 114px 34px 54px;
+    width: 1105px;
+    height: 620px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.filterCategoryMain{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 105px;
+    ul {
+        list-style: none;
+
+        h3 {
+            margin-bottom: 30px;
+            font-size: 35px;
+            font-weight: 600;
+            color: #1B1B1B;
+        }
+
+        li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 400;
+            font-family: Didact Gothic;
+
+            input[type="checkbox"] {
+                appearance: none;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid #000;
+                margin-right: 20px;
+                vertical-align: middle;
+              }
+        
+              input[type="checkbox"]:checked {
+                background-color: #000;
+              }
+        }
+    }
+}
+
+.filterCategoryFooter{
+    h3 {
+        margin-bottom: 30px;
+        font-size: 35px;
+        font-weight: 600;
+        color: #1B1B1B;
+    }
+
+    input[type="text"] {
+        padding-left: 28px;
+        width: 615px;
+        height: 64px;
+        border-radius: 20px;
+        border: none;
+        background: #F5F5DC;
+        outline: none;
+        font-size: 30px;
+        font-weight: 400;
+        font-family: Didact Gothic;
+        color: #B7B7B7;
+    }
+}
+
+.filterBtn{
+    width: 265px;
+    height: 80px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    background: #F5F5DC;
+}
+
+.filterCalendar{
+    margin: 0 0 60px 70px;
+    padding: 28px 116px 0 73px;
+    width: 993px;
+    height: 1248px;
+    border-radius: 34.8px;
+    background: #fff;
+
+    .calendarHeader{
+        text-align: center;
+        >span {
+            font-size: 35px;
+            font-weight: 400;
+            color: #1B1B1B;
+        }
+    }
+}
+
+.calendarDays{
+    margin: 67px 0 26px 0;
+    display: flex;
+    justify-content: space-between;
+    
+
+    div {
+        margin-left: 63px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            font-family: Didact Gothic;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .calendarNum{
+            margin-top: 17px;
+            font-size: 35px;
+            color: #1B1B1B;
+        }
+    }
+}
+
+.calendarHours{
+    >div {
+        display: flex;
+        align-items: center;
+
+        >span {
+            margin: 0 32px 20px 0;
+            font-size: 35px;
+            font-weight: 400;
+            font-family: Didact Gothic;
+            color: #1B1B1B;
+        }
+    }
+}
+
+.hourLine{
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.calendarBtn{
+    text-align: center;
+    >button {
+        padding: 30px 122px;
+    border-radius: 20px;
+    opacity: 0.8;
+    background: #F5F5DC;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
+}
+
+@media(max-width: 1280px) {
+    .filter {
+        padding-left: 10px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .filterCategory {
+        margin-left: 0;
+        width: 930px;
+    }
+
+    .filterContent{
+        .filterWrap{
+            width: 965px;
+        }
+    }
+
+    .filterCalendar{
+        margin-left: 0;
+    }
+    
+}
+@media(max-width: 768px) {
+    .filterCategory {
+        margin-left: 50px;
+        width: 720px;
+        padding: 10px;
+    }
+
+    .filterContent{
+        .filterWrap{
+            width: 687px;
+        }
+    }
+
+    .filterCalendar{
+        padding: 10px;
+        width: 750px;
+    }  
+}
+
+@media(max-width: 480px){
+    .filter{
+        padding-left: 0;
+        .filterContent{
+            .filterWrap{
+                width: 100%;
+    
+                .filterCategory{
+                    width: 100%;
+                    margin: 10px 0;
+                    
+                    .filterCategoryMain {
+                        margin-bottom: 0;
+                        ul {
+                            h3{
+                                font-size: 25px;
+                            }
+    
+                            li {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+    
+                    .filterCategoryFooter {
+                        input[type="text"]{
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .filterCalendar {
+            width: 100%;
+
+            .calendarDays{
+                div {
+                    margin-left: 5px;
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .calendarHours {
+                div{ 
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}

@@ -1,0 +1,140 @@
+@import "../../styles/vars.scss";
+
+
+.slide {
+   margin-bottom: 10px;
+   border-radius: 30px;
+   padding: 10px 30px;
+   border: 3px solid #FF8A44;
+   white-space: wrap;
+   background-color: white;
+   margin-right: 10px;
+   height: 100%;
+
+   .slide_main {
+      display: flex;
+      justify-content: start;
+
+      gap: 20px;
+
+      .text_star {
+         margin-top: 1px;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+
+
+         .name {
+            font-size: $MAIN_TEXT_SIZE;
+            font-weight: bold;
+         }
+
+         .img_star {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+
+            img {
+               width: 20px;
+               height: 20px;
+            }
+         }
+      }
+
+      .img {
+         img {
+            width: 100px;
+            height: 100px;
+
+         }
+      }
+   }
+}
+
+@media (max-width: 830px) {
+   .slide .slide_main .img img {
+      width: 60px;
+      height: 60px;
+   }
+
+   .slide .slide_main .text_star .name {
+      font-size: 1rem;
+      font-weight: bold;
+   }
+
+
+}
+
+@media (max-width: 560px) {
+   .slide {
+      flex-shrink: 0;
+      padding: 8px;
+      margin-right: 10px;
+      height: 100%;
+      border-radius: 15px;
+   }
+
+   .slide .slide_main .img img {
+      width: 30px;
+      height: 30px;
+   }
+
+   .slide .slide_main .text_star .name {
+      font-size: 0.6rem;
+      font-weight: bold;
+   }
+
+   .slide .slide_main .text_star .img_star img {
+      width: 15px;
+      height: 15px;
+   }
+
+   .slide .slide_main .text_star {
+      margin-top: 1px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+   }
+
+   .sliders .slider-container .slider-button {
+      img {
+         width: 20px;
+         height: 20px;
+      }
+   }
+
+   .sliders .slider-container .slide {
+      border-radius: 10px;
+      border: 2px solid #FF8A44;
+   }
+}
+
+@media (max-width:400px) {
+   .slide .slide_main {
+      display: flex;
+      justify-content: start;
+      gap: 5px;
+   }
+
+   .slide .slide_main .text_star .name {
+      font-size: 0.5rem;
+      font-weight: bold;
+   }
+
+   .slide .slide_main .text_star .img_star img {
+      width: 10px;
+      height: 10px;
+   }
+
+   .sliders .slider-container .slider-button img {
+      width: 15px;
+      height: 15px;
+   }
+
+   .sliders .slider-container .slide {
+      flex-shrink: 0;
+      padding: 5px;
+      margin-right: 10px;
+      height: 100%;
+   }
+}

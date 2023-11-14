@@ -1,0 +1,236 @@
+@import "../../styles/vars.scss";
+
+
+.main {
+   overflow: hidden;
+   margin-top: 60px;
+   margin-bottom: 0;
+
+   .wrapper {
+      padding: 0 50px;
+
+      .main_content {
+         display: flex;
+
+         .main_content_text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+
+            .square {
+               position: absolute;
+               width: 40px;
+               left: -70px;
+            }
+
+            .main_content_title_big {
+               font-size: 40px;
+               font-weight: 700;
+
+            }
+
+            .btn {
+               margin-top: 40px;
+               margin-right: auto;
+               background-color: $COLOR_YELLOW;
+               color: black;
+
+               &:hover {
+                  background-color: transparent;
+                  color: $COLOR_YELLOW;
+               }
+            }
+         }
+
+         .main_content_img {
+            width: 50%;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+
+            .circle {
+               position: absolute;
+               width: 90%;
+               height: 90%;
+               border-radius: 50%;
+               background-color: $COLOR_YELLOW;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -30%);
+               z-index: -10;
+
+
+
+            }
+
+            img {
+               z-index: 10;
+               width: 80%;
+               height: 100%;
+               object-fit: cover;
+            }
+         }
+
+      }
+   }
+}
+
+@media (max-width:945px) {
+   .main {
+      margin-top: 60px;
+      margin-bottom: 0;
+
+      .wrapper {
+         padding: 0 30px;
+
+         .main_content {
+            display: flex;
+
+            .main_content_text {
+               width: 50%;
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               position: relative;
+
+               .square {
+                  position: absolute;
+                  width: 40px;
+                  left: -70px;
+               }
+
+               .main_content_title_big {
+                  font-size: 30px;
+                  font-weight: 700;
+
+               }
+
+               .btn {
+                  margin-top: 40px;
+                  margin-right: auto;
+                  background-color: $COLOR_YELLOW;
+                  color: black;
+
+                  &:hover {
+                     background-color: transparent;
+                     color: $COLOR_YELLOW;
+                  }
+               }
+            }
+
+            .main_content_img {
+               width: 50%;
+               overflow: hidden;
+               position: relative;
+               z-index: 1;
+
+               .circle {
+                  position: absolute;
+                  width: 90%;
+                  height: 90%;
+                  border-radius: 50%;
+                  background-color: $COLOR_YELLOW;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -30%);
+                  z-index: -10;
+
+
+
+               }
+
+               img {
+                  z-index: 10;
+                  width: 80%;
+                  height: 100%;
+                  object-fit: cover;
+               }
+            }
+
+         }
+      }
+   }
+}
+
+
+@media (max-width:730px) {
+   .main {
+      margin-top: 60px;
+      margin-bottom: 0;
+
+      .wrapper {
+         padding: 0 30px;
+
+         .main_content {
+            display: flex;
+
+            .main_content_text {
+               width: 100%;
+               text-align: center;
+               max-width: 500px;
+               margin: 0 auto;
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               position: relative;
+
+               .square {
+                  position: absolute;
+                  width: 40px;
+                  left: -70px;
+               }
+
+               .main_content_title_big {
+                  font-size: 30px;
+                  font-weight: 700;
+
+               }
+
+               .btn {
+                  padding: 10px 30px;
+                  margin: 40px auto;
+                  background-color: $COLOR_YELLOW;
+                  color: black;
+
+                  &:hover {
+                     background-color: transparent;
+                     color: $COLOR_YELLOW;
+                  }
+               }
+            }
+
+            .main_content_img {
+               display: none;
+               overflow: hidden;
+               position: relative;
+               z-index: 1;
+
+               .circle {
+                  position: absolute;
+                  width: 90%;
+                  height: 90%;
+                  border-radius: 50%;
+                  background-color: $COLOR_YELLOW;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -30%);
+                  z-index: -10;
+
+
+
+               }
+
+               img {
+                  z-index: 10;
+                  width: 80%;
+                  height: 100%;
+                  object-fit: cover;
+               }
+            }
+
+         }
+      }
+   }
+}

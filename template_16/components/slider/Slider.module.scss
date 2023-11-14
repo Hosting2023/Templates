@@ -1,0 +1,89 @@
+.slider{
+    background-color: #C8E9F7;
+}
+
+.sliderBtn{
+    display: flex;
+    justify-content: center;
+
+    >button {
+        margin: 0 50px 98px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 265px;
+        height: 80px;
+        padding: 30px 122px;
+        outline: none;
+        border-radius: 30px;
+        background: #F5F5DC;
+        font-size: 30px;
+    }
+}
+
+.sliderHeader{
+
+    h2{
+        margin: 0 0 88px 151px;
+        font-size: 50px;            
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.activeButton {
+    border: 3px solid #424242; 
+}
+
+@media(max-width: 1024px) {
+    .slider{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .sliderHeader{
+            display: flex;
+            justify-content: center;
+            h2{
+                margin: 0 0 20px 0;
+            }
+        }
+        .sliderBtn{
+            flex-wrap: wrap;
+            width: 640px;
+
+            >button {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .slider {
+        .sliderHeader{
+            >h2 {
+                margin-left: 115px;
+            }
+        }
+
+        .sliderBtn{
+            margin-left: 39px;
+            width: 440px;
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    .slider {
+        .sliderHeader{
+            >h2 {
+                margin-left: 115px;
+            }
+        }
+
+        .sliderBtn{
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  padding: 45px 0;
+
+  .links_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 25px 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    .links_list {
+      gap: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+}

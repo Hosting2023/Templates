@@ -1,0 +1,85 @@
+.footer {
+  width: 100%;
+  border-top: 2px solid #000;
+  padding: 90px 200px;
+
+  .title {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
+
+  .links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+  }
+}
+
+.footer.ivrit_version{
+  direction: rtl;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    padding: 90px 100px;
+
+    .title {
+      font-size: 30px;
+    }
+
+    .links {
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    padding: 70px;
+
+    .title {
+      font-size: 28px;
+    }
+
+    .links {
+      gap: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+
+    .title {
+      font-size: 20px;
+    }
+
+    .links {
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 20px;
+
+    .title {
+      font-size: 16px;
+    }
+
+    .links {
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}

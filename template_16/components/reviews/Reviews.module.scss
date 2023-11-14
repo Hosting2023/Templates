@@ -1,0 +1,82 @@
+.reviews{
+    padding-bottom: 146px;
+    background: #C8E9F7;
+    .reviewsHeader{
+        padding: 123px 0 87px 151px;
+        >h2{
+            font-size: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .reviewsCards{
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+    }
+}
+
+.revCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 36px 54px 19px 40px;
+    margin: 0 40px 30px 0;
+    min-width: 777px;
+    height: 310px;
+    border-radius: 50px;
+    background: #F5F5DC;
+
+    .cardHeader {
+        
+        >span {
+            margin-bottom: 26px;
+            font-size: 28px;
+            font-weight: 400;
+            font-family: Didact Gothic;
+            color: #1B1B1B;
+        }
+    }
+
+    .CardFooter{
+        display: flex;
+        align-items: flex-end;
+
+        >img {
+            margin-right: 22px;
+        }
+
+        .cardName {
+            display: flex;
+            flex-direction: column;
+            margin-right: 132px;
+
+            >span {
+                font-size: 28px;
+                font-weight: 400;
+                color: #1B1B1B;
+                font-family: Didact Gothic;
+            }
+
+            .lowerName{
+                margin: 10px 0;
+                font-size: 25px;
+                font-weight: 400;
+                color: #BDBDBD;
+                font-family: Didact Gothic;
+            }
+        }
+
+        .cardStars{
+            flex: 1;
+            justify-content: flex-end;
+            .starsImg{
+                width: 232px;
+                height: 34px;
+            }
+        }
+
+        
+    }
+}

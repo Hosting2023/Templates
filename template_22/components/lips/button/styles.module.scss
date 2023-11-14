@@ -1,0 +1,152 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 1px 4px rgba(99, 93, 96, 0.3);
+  font-family: inherit;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.text{
+  color: #FFF;
+  font-family: Manrope, sans-serif;;
+  font-size: 28.247px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.palettesPrimary {
+  background-color: #000;
+
+  &:hover {
+    //background-color: #9b3d63;
+    box-shadow: 2px 1px 20px rgba(99, 93, 96, 0.4);
+  }
+
+  &:active {
+    //background-color: #a0627b;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:disabled {
+    color: #d3b8c2;
+    background-color: #f5f2f2;
+    box-shadow: 2px 1px 4px rgba(1, 1, 1, 0.3);
+  }
+}
+.sizesFixed {
+  width: 278px;
+
+  //@media (min-width: 768px) {
+  //  width: 150px;
+  //}
+}
+
+.sizesFill {
+  width: 100%;
+}
+
+
+.heightsSmall {
+  height: 74px;
+}
+
+.heightsRegular {
+  height: 36px;
+
+  @media (min-width: 768px) {
+    height: 40px;
+  }
+}
+
+.fontStyleItalic {
+  font-style: italic;
+}
+
+.fontStyleNormal {
+  font-style: normal;
+}
+
+.fontWeightNormal {
+  font-weight: 400;
+}
+
+.fontWeightBold {
+  font-weight: 700;
+}
+
+.fontSize_xxs {
+  font-size: 8px;
+  line-height: 11px;
+}
+
+.fontSize_xs {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.fontSize_sm {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.fontSize_base {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.fontSize_lg {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.fontSize_xl {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.textColor_white {
+  color: #fff;
+}
+
+.textColor_black {
+  color: #000;
+}
+
+.textColor_gray_dark {
+  color: #333333;
+}
+
+.textColor_blue_dark {
+  color: #2e3940;
+}
+
+.textAlign_left {
+  text-align: left;
+}
+
+.textAlign_center {
+  text-align: center;
+}
+
+.textAlign_right {
+  text-align: right;
+}
+
+.textTransform_uppercase {
+  text-transform: uppercase;
+}
+
+.textTransform_lowercase {
+  text-transform: lowercase;
+}
+
+.textTransform_capitalize {
+  text-transform: capitalize;
+}
+
+.textTransform_normal {
+  text-transform: none;
+}

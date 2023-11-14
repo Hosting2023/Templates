@@ -1,0 +1,61 @@
+.menuContainer{
+  max-width: 1920px;
+  height: 133px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  @media (max-width: 390px) {
+    height: 18px;
+  }
+
+}
+.menu {
+  width: 856px;
+  height: 33px;
+  position: relative;
+  top: 55px;
+  left: 450px;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: white;
+  align-items: center;
+  gap: 60px;
+
+  @media (max-width: 390px) {
+    display: none;
+  }
+
+  .menuLink {
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &.active {
+      color: white;
+      background-color: #007bff;
+    }
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+  .menuLinkText{
+    color: #000;
+    font-family: Red Hat Text, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+}
+
+.selectLanguagesWrapper {
+  width: 86px;
+}
+

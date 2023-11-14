@@ -1,0 +1,186 @@
+@import "../../app/[locale]/variables.scss";
+
+.ad {
+    position: relative;
+    height: 934px;
+    padding: 153px 233px 36px 211px;
+    background: $bg-green-gradient;
+
+    &_he {
+        position: relative;
+        height: 934px;
+        padding: 153px 172px 92px 418px;
+        background: $bg-green-gradient;
+    }
+
+    &__container {
+        &_text {
+            max-width: 1274px;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        &_p {
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        &_content {
+            max-width: 487px;
+            margin-top: 284px;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+
+    &__wrapper {
+        position: absolute;
+        top: 360px;
+        left: 377px;
+        display: flex;
+        gap: 282px;
+
+        &_he {
+            position: absolute;
+            top: 304px;
+            right: 404px;
+            display: flex;
+            gap: 251px;
+        }
+    }
+
+    @media only screen and (max-width: 1700px) {
+        padding: 70px 133px 18px 101px;
+
+        &_he {
+            position: relative;
+            height: 934px;
+            padding: 70px 133px 18px 101px;
+            background: $bg-green-gradient;
+        }
+
+        &__container {
+            &_text {
+                max-width: 1274px;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            &_p {
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            &_content {
+                max-width: 300px;
+                margin: 144px 0 0 40px;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+
+        &__wrapper {
+            top: 510px;
+            left: 0px;
+            gap: 150px;
+
+            & img {
+                width: 400px;
+                height: 400px;
+            }
+
+            &_he {
+                position: absolute;
+                top: 334px;
+                right: 164px;
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+    @media only screen and (max-width: 833px) {
+        height: 210px;
+        padding: 34px 70px 18px 25px;
+
+        &_he {
+            position: relative;
+            height: 210px;
+            padding: 34px 70px 18px 25px;
+            background: $bg-green-gradient;
+        }
+
+        &__container {
+            &_text {
+                max-width: 294px;
+                font-size: 9px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            &_p {
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            &_content {
+                max-width: 109px;
+                margin: 52px 0 0 59px;
+                font-size: 8px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+
+        &__wrapper {
+            top: 83px;
+            left: -70px;
+            gap: 40px;
+
+            & img {
+                width: 120px;
+                height: 120px;
+            }
+
+            &_he {
+                position: absolute;
+                top: 63px;
+                right: 65px;
+                display: flex;
+                gap: 0px;
+
+                & img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,341 @@
+@import "../../styles/vars.scss";
+
+
+
+.filter {
+   padding-top: 30px;
+   margin-top: 80px;
+
+   .wrapper {
+      .filter_content {
+         margin-top: 30px;
+         background-color: $COLOR_BLACK;
+         display: flex;
+         border-radius: 30px;
+         padding: 30px;
+         padding-top: 50px;
+
+         .filter_content_left {
+            width: 50%;
+            position: relative;
+
+
+
+            .filter_content_img_first {
+               margin-top: 10px;
+               transform: translateY(20px);
+
+               .img {
+                  width: 240px;
+                  height: 240px;
+               }
+
+            }
+
+            .filter_content_img_second {
+               .img {
+                  width: 240px;
+                  height: 240px;
+               }
+
+               margin-left: 100px;
+
+
+
+            }
+         }
+
+         .filter_content_right {
+            width: 50%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-right: 50px;
+
+            .filter_right_input_and_button {
+               margin-top: 30px;
+               display: flex;
+               flex-direction: column;
+               gap: 30px;
+
+               ::placeholder {
+                  color: gray;
+                  text-transform: uppercase;
+               }
+
+               input {
+                  background-color: transparent;
+                  padding: 14px 20px;
+                  border: 2px solid white;
+                  border-radius: 30px;
+                  color: white;
+
+               }
+
+               .btn {
+                  align-self: center;
+                  color: white;
+                  border: 2px solid white;
+                  transition: all 0.3s ease;
+
+                  &:hover {
+                     border: 2px solid #494A52;
+                     color: #494A52;
+                  }
+               }
+
+            }
+
+            .filter_right_types {
+               display: flex;
+               flex-direction: column;
+               gap: 10px;
+
+               .filter_right_choise {
+                  display: flex;
+                  gap: 10px;
+                  flex-wrap: wrap;
+
+                  .btn {
+                     color: white;
+                     border: 2px solid white;
+                     transition: all 0.3s ease;
+
+                     &.active {
+                        border: 2px solid #494A52;
+                        color: #494A52;
+                     }
+                  }
+               }
+            }
+         }
+
+
+      }
+   }
+}
+
+@media(max-width:1265px) {
+   .filter {
+      padding-top: 30px;
+      margin-top: 80px;
+
+      .wrapper {
+         .filter_content {
+            margin-top: 30px;
+            background-color: $COLOR_BLACK;
+            display: flex;
+            border-radius: 30px;
+            padding: 30px;
+            padding-top: 50px;
+
+            .filter_content_left {
+               width: 50%;
+               position: relative;
+
+               .filter_content_img_first {
+                  margin-top: 30px;
+
+                  transform: translateY(30px);
+               }
+
+               .filter_content_img_second {
+                  margin-left: 100px;
+
+
+               }
+            }
+
+            .filter_content_right {
+               width: 50%;
+               color: white;
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               padding-right: 20px;
+
+               .filter_right_input_and_button {
+                  margin-top: 30px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 30px;
+
+                  ::placeholder {
+                     color: gray;
+                     text-transform: uppercase;
+                  }
+
+                  input {
+                     background-color: transparent;
+                     padding: 14px 20px;
+                     border: 2px solid white;
+                     border-radius: 30px;
+                     color: white;
+
+                  }
+
+                  .btn {
+                     align-self: center;
+                     color: white;
+                     border: 2px solid white;
+                     transition: all 0.3s ease;
+
+                     font-size: 10px;
+
+                     &:hover {
+                        border: 2px solid #494A52;
+                        color: #494A52;
+                     }
+                  }
+
+               }
+
+               .filter_right_types {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+
+                  .filter_right_choise {
+                     display: flex;
+                     gap: 10px;
+                     flex-wrap: wrap;
+
+                     .btn {
+                        color: white;
+                        border: 2px solid white;
+                        transition: all 0.3s ease;
+
+                        &.active {
+                           border: 2px solid #494A52;
+                           color: #494A52;
+                        }
+                     }
+                  }
+               }
+            }
+
+
+         }
+      }
+   }
+}
+
+@media(max-width:880px) {
+   .filter {
+      padding-top: 30px;
+      margin-top: 80px;
+
+      .wrapper {
+         .filter_content {
+            margin-top: 10px;
+            background-color: $COLOR_BLACK;
+            display: flex;
+            border-radius: 30px;
+            padding: 20px;
+            padding-top: 50px;
+            gap: 30px;
+
+            .filter_content_left {
+               width: 30%;
+
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               gap: 10px;
+
+               .filter_content_img_first {
+                  margin-top: 0px;
+
+                  transform: translateY(0px);
+                  .img{
+                     width:100%;
+                     height:100%;
+                  }
+
+
+               }
+
+               .filter_content_img_second {
+                  margin-left: 0px;
+   .img {
+         width: 100%;
+         height: 100%;
+      }
+
+               }
+            }
+
+            .filter_content_right {
+               width: 70%;
+               color: white;
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               padding-right: 20px;
+
+               .filter_right_input_and_button {
+                  margin-top: 30px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 30px;
+
+                  ::placeholder {
+                     color: gray;
+                     text-transform: uppercase;
+                  }
+
+                  input {
+                     background-color: transparent;
+                     padding: 10px 20px;
+                     border: 2px solid white;
+                     border-radius: 30px;
+                     color: white;
+
+                  }
+
+                  .btn {
+                     align-self: center;
+                     color: white;
+                     border: 2px solid white;
+                     transition: all 0.3s ease;
+
+                     font-size: 10px;
+
+                     &:hover {
+                        border: 2px solid #494A52;
+                        color: #494A52;
+                     }
+                  }
+
+               }
+
+               .filter_right_types {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+
+                  .filter_right_choise {
+                     display: flex;
+                     gap: 10px;
+                     flex-wrap: wrap;
+
+                     .btn {
+                        color: white;
+                        border: 2px solid white;
+                        transition: all 0.3s ease;
+
+                        &.active {
+                           border: 2px solid #494A52;
+                           color: #494A52;
+                        }
+                     }
+                  }
+               }
+            }
+
+
+         }
+      }
+   }
+}

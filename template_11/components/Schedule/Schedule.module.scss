@@ -1,0 +1,435 @@
+@import "../../styles/vars.scss";
+
+
+.schedule {
+   margin-top: 140px;
+   padding-top: 60px;
+
+   .filter_line {
+      margin-top: 50px;
+   }
+
+   .wrapper {
+      padding: 0 100px;
+
+
+      .schedule_title {
+         position: relative;
+         font-weight: 900;
+         margin-bottom: 20px;
+         text-align: left;
+         text-transform: uppercase;
+         margin-left: 50px;
+
+
+         .schedule_img {
+            position: absolute;
+            top: -160px;
+            left: -55px;
+            max-width: 260px;
+
+         }
+      }
+
+      .schedule_content {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+
+         .btn {
+
+            margin: 0 auto;
+            margin-top: 10px;
+         }
+
+         .schedule_main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+         }
+
+         .mobile {
+            display: none
+         }
+
+         .schedule_table {
+            border-collapse: collapse;
+
+            font-family: Arial, sans-serif;
+
+            thead {
+               border: 0;
+
+               tr {
+                  border: none;
+
+                  th {
+                     border: none;
+                     background-color: $COLOR_ORANGE;
+
+                  }
+
+                  .days {
+                     background-color: white;
+                  }
+
+
+               }
+
+
+            }
+
+            th,
+            td {
+               border: 1px solid black;
+               padding: 8px;
+               text-align: center;
+               width: 100px;
+
+               height: 40px;
+
+               box-sizing: border-box;
+
+            }
+
+            th {
+               background-color: #f0f0f0;
+            }
+
+            tbody {
+               .times {
+
+                  border: none;
+                  text-align: right;
+                  ;
+
+               }
+            }
+
+            .selected_cell {
+               background-color: #BABABA;
+            }
+
+            .normal_cell {
+               background-color: #fff;
+            }
+
+            .days_row th {
+               border: none;
+               background-color: #f0f0f0;
+               padding: 8px;
+               text-align: center;
+            }
+         }
+
+
+
+
+
+
+
+         .schedule_content_img {
+            margin-left: auto;
+
+            img {
+               width: 70%;
+            }
+         }
+      }
+
+   }
+}
+
+
+
+@media (max-width:700px) {
+   .schedule {
+      margin-top: 140px;
+      padding-top: 60px;
+
+      .filter_line {
+         margin-top: 50px;
+      }
+
+      .wrapper {
+         padding: 0 15px;
+
+
+         .schedule_title {
+            position: relative;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-align: left;
+            text-transform: uppercase;
+            margin-left: 50px;
+
+
+            .schedule_img {
+               position: absolute;
+               top: -160px;
+               left: -55px;
+               max-width: 260px;
+
+            }
+         }
+
+         .schedule_content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .btn {
+
+               margin: 0 auto;
+               margin-top: 10px;
+            }
+
+            .schedule_main {
+               margin-top: 70px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+            }
+
+            .schedule_table {
+               border-collapse: collapse;
+
+               font-family: Arial, sans-serif;
+
+               thead {
+                  border: 0;
+
+                  tr {
+                     border: none;
+
+                     th {
+                        border: none;
+                        background-color: $COLOR_ORANGE;
+
+                     }
+
+                     .days {
+                        background-color: white;
+                     }
+
+
+                  }
+
+
+               }
+
+               th,
+               td {
+                  border: 1px solid black;
+                  padding: 8px;
+                  text-align: center;
+                  width: 100px;
+
+                  height: 40px;
+
+                  box-sizing: border-box;
+
+               }
+
+               th {
+                  background-color: #f0f0f0;
+               }
+
+               tbody {
+                  .times {
+
+                     border: none;
+                     text-align: right;
+                     ;
+
+                  }
+               }
+
+               .selected_cell {
+                  background-color: #BABABA;
+               }
+
+               .normal_cell {
+                  background-color: #fff;
+               }
+
+               .days_row th {
+                  border: none;
+                  background-color: #f0f0f0;
+                  padding: 8px;
+                  text-align: center;
+               }
+            }
+
+
+
+
+
+
+
+            .schedule_content_img {
+               margin-left: auto;
+
+               img {
+                  width: 70%;
+                  display: none;
+               }
+            }
+         }
+
+      }
+   }
+}
+
+@media (max-width:560px) {
+   .schedule {
+      margin-top: 140px;
+      padding-top: 60px;
+
+      .filter_line {
+         margin-top: 50px;
+      }
+
+      .wrapper {
+         padding: 0 10px;
+
+
+         .schedule_title {
+            position: relative;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-align: left;
+            text-transform: uppercase;
+            margin-left: 50px;
+
+
+            .schedule_img {
+               position: absolute;
+               top: -160px;
+               left: -55px;
+               max-width: 160px;
+
+            }
+         }
+
+         .schedule_content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .btn {
+
+               margin: 0 auto;
+               margin-top: 10px;
+            }
+
+            .schedule_main {
+               margin-top: 70px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+            }
+
+            .mobile {
+               display: block;
+            }
+
+            .schedule_table {
+               margin-top: 30px;
+               width: 100%;
+               border-collapse: collapse;
+
+               &.laptop {
+                  display: none
+               }
+
+               font-family: Arial,
+               sans-serif;
+
+               thead {
+                  border: 0;
+
+                  tr {
+                     border: none;
+
+                     th {
+                        border: none;
+                        background-color: $COLOR_ORANGE;
+
+                     }
+
+                     .days {
+                        background-color: white;
+                     }
+
+
+                  }
+
+
+               }
+
+               th,
+               td {
+                  border: 1px solid black;
+                  padding: 8px;
+                  text-align: center;
+                  width: 100px;
+
+                  height: 40px;
+
+                  box-sizing: border-box;
+
+               }
+
+               th {
+                  background-color: #f0f0f0;
+               }
+
+               tbody {
+                  .times {
+
+                     border: none;
+                     text-align: right;
+                     ;
+
+                  }
+               }
+
+               .selected_cell {
+                  background-color: #BABABA;
+               }
+
+               .normal_cell {
+                  background-color: #fff;
+               }
+
+               .days_row th {
+                  border: none;
+                  background-color: #f0f0f0;
+                  padding: 8px;
+                  text-align: center;
+               }
+            }
+
+
+
+
+
+
+
+            .schedule_content_img {
+               margin-left: auto;
+
+               img {
+                  width: 70%;
+                  display: none;
+               }
+            }
+         }
+
+      }
+   }
+}

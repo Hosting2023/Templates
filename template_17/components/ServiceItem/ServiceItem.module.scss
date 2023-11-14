@@ -1,0 +1,75 @@
+@import "../../app/[locale]/variables.scss";
+
+.serviceItem {
+    display: flex;
+    gap: 106px;
+    padding: 28px 22px 28px 65px;
+    border-top: 1px solid $black;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        min-width: 98px;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: none;
+    }
+
+    @media only screen and (max-width: 1400px) {
+        gap: 15px;
+        padding: 14px 14px 17px 21px;
+        border-top: 0.22px solid $black;
+
+        &__wrapper {
+            width: 50px;
+        }
+
+        &__title {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &__content {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 833px) {
+        align-items: center;
+        gap: 11px;
+        padding: 4px 4px 7px 11px;
+        border-top: 0.22px solid $black;
+
+        &__wrapper {
+            min-width: 29px;
+            width: 29px;
+
+            & img {
+                height: 29px;
+            }
+        }
+
+        &__title {
+            margin: 0;
+            font-size: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &__content {
+            font-size: 8px;
+        }
+    }
+}

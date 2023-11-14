@@ -1,0 +1,195 @@
+@import "../../app/[locale]/variables.scss";
+
+.about {
+    padding: 152px 0 105px;
+    background: $white;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1920px;
+        padding: 0 187px 0 213px;
+        margin: 0 auto;
+
+        &_image {
+            height: auto;
+            max-height: 562px;
+            background: $peach;
+
+            & img {
+                max-width: none;
+            }
+        }
+
+        &_title {
+            margin-bottom: 47px;
+            color: $black;
+            font-size: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        & h2 {
+            margin: 56px 0 211px;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        &_greetings {
+            padding-left: 111px;
+
+            &_he {
+                padding-left: 0;
+            }
+        }
+
+        &_description {
+            max-width: 913px;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+
+            &_mobile {
+                display: none;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        margin-bottom: 40px;
+
+        &_he {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 145px;
+        }
+    }
+
+    &__content {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    @media only screen and (max-width: 1560px) {
+        &__container {
+            padding: 0 50px 0 60px;
+
+            & h2 {
+                font-size: 36px;
+            }
+
+            &_image {
+                height: auto;
+                max-height: 362px;
+                max-width: 320px;
+                background: $peach;
+
+                & img {
+                    max-height: 362px;
+                    width: 320px;
+                    max-width: none;
+                }
+            }
+
+            &_greetings {
+                padding-left: 30px;
+            }
+
+            &_description {
+                font-size: 26px;
+            }
+        }
+
+        &__content {
+            font-size: 26px;
+        }
+    }
+
+    @media only screen and (max-width: 833px) {
+        padding: 54px 0 24px;
+        margin-top: 237px;
+
+        &__container {
+            padding: 0 27px 0 27px;
+
+            & h2 {
+                margin: 16.12px 0 0 0;
+                font-size: 13px;
+            }
+
+            &_image {
+                height: auto;
+                max-height: 141px;
+                max-width: 125px;
+                background: $peach;
+
+                & img {
+                    max-height: 141px;
+                    width: 125px;
+                    max-width: none;
+                }
+
+                &_he {
+                    height: auto;
+                    max-height: 186px;
+                    max-width: 164px;
+                    background: $peach;
+
+                    & img {
+                        max-height: 186px;
+                        width: 164px;
+                        max-width: none;
+                    }
+                }
+            }
+
+            &_greetings {
+                padding-left: 29px;
+            }
+
+            &_description {
+                display: none;
+
+                &_mobile {
+                    display: block;
+                    padding-bottom: 10px;
+                    font-size: 9px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        &__wrapper {
+            display: flex;
+            width: 100%;
+            margin: 0 0 19px 0;
+
+            &_he {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 27px;
+            }
+        }
+
+        &__content {
+            font-size: 9px;
+        }
+    }
+}

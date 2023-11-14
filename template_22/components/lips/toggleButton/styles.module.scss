@@ -1,0 +1,37 @@
+.toggleButton {
+  padding: 0 1px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  width: 42px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.toggle {
+  background: #d3b8c2;
+}
+
+.notToggle {
+  background: #f0f0f0;
+}
+
+.figure {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.active {
+  transform: translateX(22px);
+  background: #a0627b;
+}
+
+.notActive {
+  transform: translateX(0);
+  background: #fbfafa;
+}

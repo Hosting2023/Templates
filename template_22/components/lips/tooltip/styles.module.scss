@@ -1,0 +1,16 @@
+@use 'styles' as *;
+
+.button {
+  position: relative;
+}
+
+.button .panel {
+  visibility: hidden;
+  position: absolute;
+  z-index: $z-index-nav;
+}
+
+.button:hover .panel {
+  visibility: visible;
+  top: -80px;
+}

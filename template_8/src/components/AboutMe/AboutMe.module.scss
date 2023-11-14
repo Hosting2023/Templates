@@ -1,0 +1,58 @@
+.aboutMe {
+  &_page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100svh;
+    padding: 6% 5%;
+
+    @media (max-width: 600px) {
+      height: 330px;
+    }
+  }
+
+  &_bg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+
+  &_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 5%;
+    font-size: 4.5vh;
+    font-weight: 700;
+
+    @media (max-width: 600px) {
+      font-size: 15px;
+    }
+  }
+
+  &_parag {
+    &_wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      z-index: 10;
+    }
+    padding: 5% 3%;
+    font-size: 2.8vh;
+    width: 50%;
+    backdrop-filter: blur(3px);
+
+    @media (max-width: 600px) {
+      width: 100%;
+      font-size: 11px;
+      padding: 8% 5%;
+    }
+  }
+}

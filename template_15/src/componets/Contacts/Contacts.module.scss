@@ -1,0 +1,89 @@
+@import "../../styles/vars.scss";
+
+
+.contacts {
+   margin-top: 150px;
+   padding: 40px;
+
+   .wrapper {
+      .contacts_content {
+         display: flex;
+
+         .contacts_title {
+            padding-left: 40px;
+         }
+
+         .contacts_icons {
+            margin: 0 auto;
+            display: flex;
+            gap: 10px;
+
+            .contacts_icons_item {
+               cursor: pointer;
+            }
+         }
+
+      }
+   }
+}
+
+
+@media(max-width:900px) {
+   .contacts {
+      margin-top: 150px;
+      padding: 40px;
+
+      .wrapper {
+         .contacts_content {
+            display: flex;
+
+            .contacts_title {
+               padding-left: 15px;
+            }
+
+            .contacts_icons {
+               margin: 0 auto;
+               display: flex;
+               gap: 10px;
+
+               .contacts_icons_item {
+                  cursor: pointer;
+               }
+            }
+
+         }
+      }
+   }
+}
+
+@media(max-width:365px) {
+   .contacts {
+      margin-top: 150px;
+      padding: 40px;
+
+      .wrapper {
+         .contacts_content {
+            gap: 10px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+
+            .contacts_title {
+
+               margin: 0 auto;
+            }
+
+            .contacts_icons {
+               margin: 0 auto;
+               display: flex;
+               gap: 10px;
+
+               .contacts_icons_item {
+                  cursor: pointer;
+               }
+            }
+
+         }
+      }
+   }
+}

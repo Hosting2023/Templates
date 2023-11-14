@@ -1,0 +1,319 @@
+@import "../../styles/vars.scss";
+
+.reviews {
+   padding-top: 30px;
+   margin-top: 60px;
+
+   .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .reviews_up {
+         display: flex;
+
+         .reviews_buttons_slider {
+            margin-left: 100px;
+            display: flex;
+            border: 2px solid #494A52;
+            border-radius: 10px;
+
+            .arrow {
+               background-color: transparent;
+
+               img {
+                  height: 25px;
+                  width: 40px;
+               }
+            }
+         }
+      }
+
+      .reviews_down {
+         .slide {
+            padding: 30px;
+            border-radius: 30px;
+            border: 2px solid #494A52;
+            height: 100%;
+            background: white;
+            display: flex;
+            min-height: 370px;
+
+            .slide_right {
+               width: 60%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+
+               .slide_quote {
+                  color: black;
+               }
+
+               .slide_image_name {
+                  display: flex;
+                  gap: 10px;
+
+                  .img {
+                     width: 100px;
+                  }
+
+                  .slide_name {
+                     margin-top: 10px;
+                     color: black;
+                  }
+               }
+
+            }
+
+            .slide_left {
+               width: 40%;
+               font-size: 14px;
+            }
+         }
+
+
+      }
+
+   }
+}
+
+
+
+@media(max-width:1265px) {
+   .reviews {
+      padding-top: 30px;
+      margin-top: 60px;
+
+      .wrapper {
+         display: flex;
+
+
+         .reviews_up {
+            display: flex;
+
+            .reviews_buttons_slider {
+               margin-left: 60px;
+               display: flex;
+               border: 2px solid #494A52;
+               border-radius: 10px;
+
+               .arrow {
+                  background-color: transparent;
+
+                  img {
+                     height: 25px;
+                     width: 40px;
+                  }
+               }
+            }
+         }
+
+         .reviews_down {
+            .slide {
+               padding: 25px;
+               border-radius: 30px;
+               border: 2px solid #494A52;
+               height: 100%;
+               background: white;
+               display: flex;
+               min-height: 350px;
+               gap: 5px;
+
+               .slide_right {
+                  width: 60%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+
+                  .slide_quote {
+                     color: black;
+                     font-size: $FONT_MAIN_TEXT_DESKSTOP;
+                  }
+
+                  .slide_image_name {
+                     display: flex;
+                     gap: 10px;
+
+                     .slide_name {
+                        margin-top: 10px;
+                        color: black;
+                     }
+                  }
+
+               }
+
+               .slide_left {
+                  width: 40%;
+                  font-size: $FONT_SMALL_DESKSTOP;
+               }
+            }
+
+
+         }
+
+      }
+   }
+}
+
+
+@media(max-width:880px) {
+   .reviews {
+      padding-top: 30px;
+      margin-top: 60px;
+
+      .wrapper {
+         display: flex;
+
+
+         .reviews_up {
+            display: flex;
+
+            .reviews_buttons_slider {
+               margin-left: 40px;
+               display: flex;
+               border: 2px solid #494A52;
+               border-radius: 10px;
+
+               .arrow {
+                  background-color: transparent;
+
+                  img {
+                     height: 25px;
+                     width: 40px;
+                  }
+               }
+            }
+         }
+
+         .reviews_down {
+            .slide {
+               padding: 15px;
+               border-radius: 30px;
+               border: 2px solid #494A52;
+               height: 100%;
+               background: white;
+               display: flex;
+               min-height: 290px;
+               gap: 10px;
+
+               .slide_right {
+                  width: 60%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+
+                  .slide_quote {
+                     color: black;
+                     font-size: $FONT_MAIN_TEXT_LAPTOP;
+
+                  }
+
+                  .slide_image_name {
+                     display: flex;
+                     gap: 10px;
+
+                     .slide_name {
+                        margin-top: 10px;
+                        color: black;
+                     }
+                  }
+
+               }
+
+               .slide_left {
+                  width: 40%;
+                  font-size: $FONT_SMALL_LAPTOP;
+               }
+            }
+
+
+         }
+
+      }
+   }
+}
+
+@media(max-width:540px) {
+   .reviews {
+      padding-top: 30px;
+      margin-top: 60px;
+
+      .wrapper {
+         display: flex;
+
+
+         .reviews_up {
+            display: flex;
+
+            .reviews_buttons_slider {
+               margin-left: 20px;
+               display: flex;
+               border: 2px solid #494A52;
+               border-radius: 10px;
+
+               .arrow {
+                  background-color: transparent;
+
+                  img {
+                     height: 25px;
+                     width: 40px;
+                  }
+               }
+            }
+         }
+
+         .reviews_down {
+            .slide {
+               padding: 20px;
+               border-radius: 30px;
+               border: 2px solid #494A52;
+               height: 100%;
+               background: white;
+               display: flex;
+               min-height: 250px;
+               gap: 5px;
+
+               .slide_right {
+                  width: 55%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+
+                  .slide_quote {
+                     color: black;
+                     font-size: $FONT_MAIN_TEXT_MOBILE;
+
+                  }
+
+                  .slide_image_name {
+                     display: flex;
+                     gap: 10px;
+
+                     .img {
+                        object-fit: cover;
+                        width: 50px !important;
+                        height: 50px;
+                        width: 100%;
+                     }
+
+                     .slide_name {
+                        margin-top: 10px;
+                        color: black;
+                        font-size: 10px;
+                     }
+                  }
+
+               }
+
+               .slide_left {
+                  width: 45%;
+                  font-size: 9px;
+               }
+            }
+
+
+         }
+
+      }
+   }
+}

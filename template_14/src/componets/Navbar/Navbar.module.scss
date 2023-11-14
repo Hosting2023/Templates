@@ -1,0 +1,75 @@
+@import "../../styles/vars.scss";
+
+
+
+.navbar_main {
+   background: linear-gradient(316deg, #FFF 0%, rgba(236, 195, 177, 0.64) 18.34%, rgba(208, 114, 93, 0.64) 29.06%, rgba(106, 33, 227, 0.64) 41.14%, #8544EE 59.27%, rgba(156, 63, 249, 0.70) 80.41%, rgba(90, 28, 190, 0.00) 100%);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+   .navbar {
+      .wrapper {
+         .navbar_content {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 150px;
+            padding: 30px 0;
+
+            .nav {
+               display: flex;
+               align-items: center;
+               gap: 30px;
+
+               li {
+                  a {
+                     color: #DEDEDE;
+                  }
+               }
+            }
+
+            .navbar_btn {
+               border-radius: 20px;
+               border: 3.728px solid #BFBFBF;
+               background: linear-gradient(270deg, #FFBA05 0%, #FAD782 100%);
+            }
+         }
+      }
+   }
+}
+
+
+@media(max-width:590px) {
+   .navbar_main {
+
+      .navbar {
+         .wrapper {
+            .navbar_content {
+
+               gap: 10px;
+               justify-content: space-between;
+
+
+            }
+         }
+      }
+   }
+}
+
+@media(max-width:380px) {
+   .navbar_main {
+
+      .navbar {
+         .wrapper {
+            .navbar_content {
+               .nav {
+                  display: none;
+               }
+
+               .navbar_btn {
+                  margin: 0 auto;
+               }
+            }
+         }
+      }
+   }
+}

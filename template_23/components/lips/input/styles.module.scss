@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  transition: all 0.1s ease-out;
+}
+
+.focusContainer {
+  border-bottom: 1px solid #ede4e8;
+  height: 65px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 4px;
+  }
+}
+
+.withoutFocusContainer {
+  border-radius: 12px;
+  background: #ffffff;
+  border-bottom: unset !important;
+}
+
+.errorContainer {
+  border: 0.5px solid #ff4040;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.error {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: end;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ca6a6a;
+
+  &.password {
+    padding-right: 34px;
+  }
+}
+
+.label {
+  padding-right: 8px;
+  padding-bottom: 4px;
+  position: absolute;
+  pointer-events: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: #b79ba6;
+  transition: all 0.1s ease-out;
+  border-bottom: 1px solid #ede4e8;
+}
+
+.input {
+  outline: none;
+  caret-color: #acacac;
+  background: transparent;
+  color: #383f43;
+  font-size: 14px;
+  line-height: 19px;
+
+  &:focus {
+    background: transparent;
+    border: 1px solid transparent;
+  }
+}
+
+.activeLabel {
+  transform: translate(0, -35px);
+  border: 0;
+  padding-bottom: 0;
+
+  @media (max-width: 768px) {
+    transform: translate(0, -25px);
+  }
+}
+
+.hiddenLabel {
+  display: none;
+}
+
+.passwordField {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.passwordButtonWrapper {
+  position: absolute;
+  right: 0;
+}
+
+.line {
+  width: 0.5px;
+  background: #383f43;
+  height: 24px;
+  position: absolute;
+  transform: rotate(52deg);
+  top: 0px;
+  left: 10px;
+  pointer-events: none;
+}
+
+.passwordButton {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+
+  &:hover,
+  &:active {
+    box-shadow: none;
+    background: transparent;
+  }
+
+  img {
+    width: 20px;
+  }
+}

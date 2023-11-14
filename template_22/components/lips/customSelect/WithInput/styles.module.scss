@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  padding: 15px 15px 11px;
+  transition: all 0.1s ease-out;
+}
+
+.focusContainer {
+  border-bottom: 1px solid #ede4e8;
+  height: 65px;
+}
+
+.withoutFocusContainer {
+  height: 46px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.errorContainer {
+  border: 0.5px solid #ff4040;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.error {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-align: end;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ca6a6a;
+}
+
+.label {
+  padding-bottom: 4px;
+  position: absolute;
+  pointer-events: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: #b79ba6;
+  transition: all 0.1s ease-out;
+  border-bottom: 1px solid #ede4e8;
+}
+
+.input {
+  outline: none;
+  caret-color: #acacac;
+  color: #383f43 !important;
+  font-size: 14px !important;
+  line-height: 19px !important;
+  font-family: inherit !important;
+}
+
+.activeLabel {
+  transform: translate(0, -32px);
+  border: 0;
+  padding-bottom: 0;
+}
+
+.hiddenLabel {
+  display: none;
+}
+
+.noValueStyle {
+  opacity: 0;
+}
+
+.focus {
+  opacity: 1;
+}
+
+.selectInput {
+  padding-left: 38px !important;
+  width: 100% !important;
+  border: 0 !important;
+  letter-spacing: 0 !important;
+  border-radius: 0 !important;
+  line-height: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+
+  &:focus {
+    background: transparent !important;
+    border: 1px solid transparent !important;
+  }
+
+  &:disabled {
+    cursor: auto;
+    background: transparent;
+  }
+}
+
+.buttonSelectInput {
+  background: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  div {
+    padding: 0 !important;
+    border-radius: 0 !important;
+
+    div {
+      div {
+        margin-left: 5px !important;
+      }
+    }
+  }
+}
+
+.dropdownSelectInput {
+  padding: 10px !important;
+  margin: -220px 0 7px -16px !important;
+  box-shadow: 0 6.07407px 12.1481px rgb(46 103 140 / 12%) !important;
+  width: 190px !important;
+  max-height: 180px !important;
+  border: 0.5px solid #b7cee8 !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  font-family: inherit !important;
+
+  li {
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    div {
+      margin-right: 10px !important;
+    }
+
+    span:first-child {
+      text-align: center !important;
+      width: 50% !important;
+    }
+
+    span {
+      text-align: center !important;
+      width: 50% !important;
+    }
+
+    span:last-child {
+      width: 40px !important;
+    }
+  }
+}

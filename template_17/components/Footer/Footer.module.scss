@@ -1,0 +1,41 @@
+@import "../../app/[locale]/variables.scss";
+
+.footer {
+    padding: 61px 161px 173px;
+
+    &__messengers {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        margin-top: 94px;
+
+        & button {
+            border: none;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+            color: $black;
+            background: $white;
+            cursor: pointer;
+        }
+    }
+
+    @media only screen and (max-width: 1100px) {
+        padding: 61px 60px 173px;
+    }
+
+    @media only screen and (max-width: 833px) {
+        padding: 24px 20px 28px;
+
+        &__messengers {
+            gap: 60px;
+            margin-top: 37px;
+
+            & button {
+                font-size: 8px;
+            }
+        }
+    }
+}

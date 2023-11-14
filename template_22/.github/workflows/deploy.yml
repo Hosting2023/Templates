@@ -1,0 +1,26 @@
+name: Deploy to development environment
+
+on:
+  push:
+    branches: ['dev']
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to VM
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          command_timeout: '20m'
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd ${{ secrets.FOLDER }} 
+            git branch
+            git pull
+            docker-compose stop
+            docker-compose -f docker-compose.yml up --build -d

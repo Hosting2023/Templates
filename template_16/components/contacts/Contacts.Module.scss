@@ -1,0 +1,51 @@
+.contacts{
+    padding: 70px 149px 90px;
+    background: no-repeat url('../../public/footer-bg.png');
+    background-position: 100% 100%;
+
+    .contactsHeader{
+        padding-bottom: 48px;
+        >h2 {
+            font-size: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .contactsFooter{
+        padding-top: 198px;
+        display: flex;
+        justify-content: center;
+        >button {
+            margin-right: 40px;
+            padding: 10px 30px;
+            border-radius: 20px;
+            border: 2px solid #000;
+            background: #F5F5DC;
+            font-family: Didact Gothic;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+}
+
+.footBg {
+
+    background: #C8E9F7;
+}
+
+@media(max-width: 480px) {
+    .footBg{
+        .contacts{
+            padding: 0;
+            .contactsFooter {
+                flex-direction: column;
+                width: 220px;
+
+                button {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

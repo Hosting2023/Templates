@@ -1,0 +1,102 @@
+@import "../../styles/vars.scss";
+
+.apartament {
+   margin-top: 90px;
+
+   .apartament_content {
+      padding: 0 5px;
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+
+      .block {
+         width: 100%;
+         position: relative;
+
+         img {
+            width: 100%;
+         }
+
+         .block_text {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            background: linear-gradient(to right, rgba(255, 138, 68, 0) 10%, rgba(255, 138, 68, 0.9) 45%, rgba(255, 138, 68, 0.8) 50%, rgba(255, 138, 68, 0.7) 55%, rgba(255, 138, 68, 0.6) 60%, rgba(255, 138, 68, 0.5) 65%, rgba(255, 138, 68, 0.4) 70%, rgba(255, 138, 68, 0.3) 75%, rgba(255, 138, 68, 0.2) 80%, rgba(255, 138, 68, 0.1) 85%, rgba(255, 138, 68, 0) 90%);
+         }
+      }
+   }
+
+   .title {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: $MAIN_TEXT_SIZE_MIDDLE;
+   }
+
+   .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30;
+
+      .apartament_content_more {
+         margin-top: 30px;
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         gap: 10px;
+
+         .block_more {
+            background-color: #91A7B3;
+            color: white;
+            border-radius: 20px;
+            max-width: 280px;
+            padding: 20px;
+            height: 270px;
+
+            .block_more_text {
+               font-size: $MAIN_TEXT_SIZE_SMALL;
+            }
+
+            .block_more_title {
+               font-size: $MAIN_TEXT_SIZE_MIDDLE;
+               font-weight: bold;
+               margin-bottom: 15px;
+               text-align: center;
+               text-transform: uppercase;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 960px) {
+   .apartament {
+      .title {
+         max-width: 800px;
+         margin: 0 auto;
+         text-align: center;
+         font-size: 1.4rem;
+      }
+
+      .wrapper {
+         .apartament_content_more {
+            .block_more {
+               .block_more_title {
+                  font-size: 1.4rem;
+                  font-weight: bold;
+                  margin-bottom: 15px;
+                  text-align: center;
+                  text-transform: uppercase;
+               }
+            }
+         }
+      }
+   }
+}

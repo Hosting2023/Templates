@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+.container {
+  display: grid;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $orange;
+  padding: 3rem 8rem;
+  margin-top: 4rem;
+}
+
+.title {
+  @include HeeboBold();
+  font-size: 45px;
+  text-align: center;
+  white-space: nowrap;
+  color: $primaryBlackText;
+  padding-inline: 8rem;
+}
+
+.line {
+  max-width: 30%;
+  width: 100%;
+  border: 3px solid $primaryBlackText;
+}

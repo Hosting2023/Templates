@@ -1,0 +1,75 @@
+.calendarWrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  height: 286px;
+  color: #333333;
+  top: -286px;
+  right: -1px;
+  gap: 6px;
+  z-index: 1;
+}
+
+.datePickerWrapper {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 00 10px 30px rgba(0, 0, 0, 0.1);
+  height: 246px;
+  color: #333333;
+  top: -285px;
+  right: 0;
+  gap: 14px;
+  width: 246px;
+  border-radius: 4px;
+
+  @media (max-width: 768px) {
+    width: 170px;
+  }
+}
+
+.calendarStyleWrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+  border-radius: 16px;
+  height: 625px;
+  width: 408px;
+  box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
+  color: #333333;
+  top: 43px;
+  left: -43px;
+  gap: 48px;
+  z-index: 5;
+}
+
+.datePickerHeader {
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #f5edf0;
+  color: #383f43;
+}
+
+.datePickerHeaderCalendar {
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 3px solid #f5edf0;
+  color: #383f43;
+  font-size: 20px;
+}
+
+.datePickerContainer {
+  display: flex;
+  height: 166px;
+}
+
+.datePickerContainerCalendar {
+  display: flex;
+  height: 310px;
+  justify-content: space-evenly;
+}

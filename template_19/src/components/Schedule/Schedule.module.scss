@@ -1,0 +1,580 @@
+.schedule {
+  width: 100%;
+  padding: 100px 80px;
+  margin-bottom: 350px;
+
+  .filters {
+    text-align: center;
+    margin-bottom: 250px;
+
+    .label_address {
+      .input_layout {
+        width: 50%;
+        padding: 12px 25px;
+        border: 2px solid black;
+        background-color: transparent;
+        margin-bottom: 130px;
+
+        .input_address {
+          width: 100%;
+          outline: none;
+          background-color: transparent;
+          border: none;
+          border-bottom: 2px solid rgba(100, 100, 100, 0.50);
+          font-size: 40px;
+        }
+      }
+    }
+
+    .label_text {
+      text-align: left;
+      color: #000;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    .radio_button_section {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+        .button_radio {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 20px;
+          width: 100%;
+          padding: 15px 10px;
+          color: #000;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: uppercase;
+          background-color: transparent;
+          cursor: pointer;
+
+          .button_marker {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+
+            img {
+              transition: 0.3s;
+              opacity: 0;
+            }
+          }
+        }
+      }
+
+      .buttons.one_time {
+        .button_marker.one_time {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      .buttons.fortnightly {
+        .button_marker.fortnightly {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      .buttons.every_week {
+        .button_marker.every_week {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+
+      .buttons.none {
+        .button_marker.none {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      .buttons.cat {
+        .button_marker.cat {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      .buttons.dog {
+        .button_marker.dog {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      .buttons.dog_and_cat {
+        .button_marker.dog {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+
+        .button_marker.cat {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+
+      .buttons.regular_cleaning {
+        .button_marker.regular_cleaning {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      .buttons.window_cleaning {
+        .button_marker.window_cleaning {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      .buttons.after_repairing {
+        .button_marker.after_repairing {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      .buttons.after_relocation {
+        .button_marker.after_relocation {
+          border-color: #A8D6DB;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+
+      .label_frequency {
+        .buttons {
+          width: 400px;
+        }
+      }
+
+      .label_allergy {
+        .buttons {
+          width: 330px;
+        }
+      }
+
+      .label_cleaning {
+        transition: 0.3s;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+
+
+        .buttons {
+          width: 500px;
+        }
+      }
+
+      .label_cleaning.cleaning_visible {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+        height: auto;
+      }
+    }
+
+    .button_search {
+      background-color: transparent;
+      color: #000;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      padding: 21px 46px;
+      border: 2px solid #000;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button_search.active {
+      background-color: #A8D6DB;
+    }
+  }
+
+  .week_schedule {
+    margin: 0 auto;
+    width: 785px;
+
+    .title {
+      margin-bottom: 40px;
+      color: #000;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    .days {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-column-gap: 15px;
+      margin-bottom: 60px;
+
+
+      .day {
+        border: 2px solid #000;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 0;
+        background-color: transparent;
+        cursor: pointer;
+
+        .text {
+          color: #000;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+      }
+
+      .day.choose{
+        background-color: #A8D6DB;
+      }
+    }
+
+    .times {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 46px;
+      grid-row-gap: 13px;
+
+      .time {
+        border: 2px solid #000;
+        background-color: transparent;
+        padding: 20px 0;
+        color: #000;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+      }
+
+      .time.choose{
+        background-color: #A8D6DB;
+      }
+    }
+
+
+  }
+}
+
+.schedule.ivrit_version{
+  direction: rtl;
+
+  .filters {
+    .label_text {
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .schedule {
+    padding: 50px 60px;
+    margin-bottom: 150px;
+
+    .filters {
+      margin-bottom: 100px;
+
+      .label_address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .input_layout {
+
+          .input_address {
+
+          }
+        }
+      }
+
+      .radio_button_section {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+
+        .label_frequency, .label_allergy, .label_cleaning {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          height: auto;
+
+          .buttons {
+            width: 50%;
+
+            .button_radio {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .label_cleaning {
+          height: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .schedule {
+    padding: 50px;
+    margin-bottom: 150px;
+
+    .filters {
+      margin-bottom: 100px;
+
+      .label_address {
+
+        .input_layout {
+          width: 80%;
+
+          .input_address {
+
+          }
+        }
+      }
+
+      .radio_button_section {
+        .label_frequency, .label_allergy, .label_cleaning {
+          .buttons {
+            width: 80%;
+
+            .button_radio {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .week_schedule {
+      width: 100%;
+
+      .title {
+
+      }
+
+      .days {
+
+
+        .day {
+
+
+          .text {
+
+          }
+        }
+      }
+
+      .times {
+
+
+        .time {
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .schedule {
+    margin-bottom: 50px;
+
+    .filters {
+      margin-bottom: 100px;
+      .radio_button_section {
+        margin-bottom: 30px;
+      }
+    }
+
+    .week_schedule {
+
+      .title {
+
+      }
+
+      .days {
+        grid-column-gap: 1%;
+
+        .day {
+          gap: 15px;
+          padding: 15px 0;
+
+          .text {
+
+          }
+        }
+      }
+
+      .times {
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+        .time {
+
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .schedule {
+    padding: 20px;
+
+    .filters {
+      margin-bottom: 100px;
+
+      .label_address {
+        .input_layout {
+          width: 100%;
+          margin-bottom: 50px;
+
+
+          .input_address {
+
+          }
+        }
+      }
+
+      .radio_button_section {
+        margin-bottom: 30px;
+
+        .label_frequency, .label_allergy, .label_cleaning {
+          .buttons {
+            width: 100%;
+
+            .button_radio {
+              font-size: 12px;
+              gap: 10px;
+
+              .button_marker {
+                width: 35px;
+                height: 35px;
+
+                img {
+                  width: 35px;
+                  height: 35px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .button_search {
+        font-size: 16px;
+      }
+    }
+
+    .week_schedule {
+
+      .title {
+
+      }
+
+      .days {
+        grid-column-gap: 2px;
+        margin-bottom: 30px;
+
+        .day {
+          gap: 10px;
+          padding: 10px 0;
+
+          .text {
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .times {
+        grid-gap: 2px;
+
+        .time {
+          font-size: 16px;
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+}

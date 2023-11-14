@@ -1,0 +1,102 @@
+@import "../../app/[locale]/variables.scss";
+
+.header {
+    position: relative;
+    height: 141px;
+    padding-top: 42px;
+    margin: 0 auto;
+    background: $white;
+
+    &__burger {
+        display: none;
+
+        &_icon {
+            display: none;
+
+            &_he {
+                display: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 833px) {
+        position: relative;
+        height: 35px;
+        padding: 0;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        background: none;
+
+        &__burger {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            height: 100vh;
+            background: $peach;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(1px);
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+                z-index: -1;
+                transition: visibility 0s, opacity 0.3s;
+            }
+
+            &.opened::before {
+                visibility: visible;
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            &_closed {
+                position: relative;
+                margin: 22px 0.5px 0 0;
+                border: none;
+
+                & .header__burger_icon {
+                    top: -34px;
+                    right: 0px;
+
+                    &_he {
+                        position: absolute;
+                        top: -34px;
+                        right: -390px;
+                        width: 16px;
+                        height: 16px;
+                        display: flex;
+                        justify-content: end;
+                        height: 56px;
+                        padding: 7px 7.5px 0 0;
+                    }
+                }
+            }
+
+            &_icon {
+                position: absolute;
+                top: -5.5px;
+                right: 0.5px;
+                width: 16px;
+                height: 16px;
+                display: flex;
+                justify-content: end;
+                height: 56px;
+                padding: 7px 7.5px 0 0;
+            }
+        }
+
+        &__menu {
+            display: none;
+        }
+    }
+}

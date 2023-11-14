@@ -1,0 +1,81 @@
+@import "../../styles/vars.scss";
+
+.sliderContainer {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding: 0 5px;
+}
+
+.slideButton {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: opacity 0.3s ease-in-out;
+   border-radius: 40px;
+   border: 1px solid black;
+   margin-left: 10px;
+   transform: rotate(180deg);
+   fill: #FFF;
+   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10)) drop-shadow(-4px 0px 10px rgba(0, 0, 0, 0.10));
+
+   &.left {
+      transform: rotate(0deg);
+      margin-right: 10px;
+
+   }
+
+   &:hover {
+      opacity: 0.7;
+   }
+}
+
+.slider {
+   padding-top: 30px;
+   height: 100%;
+   overflow-x: hidden;
+   position: relative;
+   width: 100%;
+
+
+
+   .slides {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+      gap: 10px;
+   }
+}
+
+@media(max-width:400px) {
+   .slideButton {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 1px;
+      display: flex;
+      align-items: center;
+      width: 30px;
+      justify-content: center;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 40px;
+      border: 1px solid black;
+      margin-left: 10px;
+      transform: rotate(180deg);
+      fill: #FFF;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.10)) drop-shadow(-4px 0px 10px rgba(0, 0, 0, 0.10));
+
+      &.left {
+         transform: rotate(0deg);
+         margin-right: 10px;
+
+      }
+
+      &:hover {
+         opacity: 0.7;
+      }
+   }
+}

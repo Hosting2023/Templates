@@ -1,0 +1,23 @@
+@import "../../styles/vars.scss";
+
+.sliderContainer {
+   position: relative;
+   display: flex;
+   align-items: center;
+
+}
+
+.slider {
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+
+   padding: 0 20px;
+
+
+   .slides {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+      gap: 10px;
+   }
+}

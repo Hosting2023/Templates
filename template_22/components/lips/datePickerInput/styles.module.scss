@@ -1,0 +1,40 @@
+@use 'styles' as *;
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.input {
+  background: #ffffff;
+  width: 100%;
+  border: 1px solid black;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #a0627b;
+  padding: 15px 15px 15px 210px;
+}
+
+.input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.birth {
+  left: 16px;
+  color: #333333;
+}
+
+.calendar {
+  right: 20px;
+  cursor: pointer;
+  z-index: $z-index-popover;
+}
+
+.position {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}

@@ -1,0 +1,262 @@
+@import "../../styles/vars.scss";
+
+
+.filter {
+   padding-top: 20px;
+   margin-top: 100px;
+
+   .wrapper {
+      overflow: hidden;
+
+      .filter_content {
+         display: flex;
+         gap: 30px;
+         flex-direction: column;
+
+
+
+
+
+
+         .filter_text {
+            padding-left: 15px;
+         }
+
+         .filter_content_blocks {
+            display: flex;
+
+            .filter_content_slider {
+               align-self: stretch;
+               height: auto;
+
+               width: 70%;
+               margin: 0 auto;
+
+               .slider_block {
+                  height: 100%;
+                  border-radius: 219.791px 219.791px 39.47px 39.47px;
+                  border: 3.947px solid #FFF;
+                  background: #F8F8F8;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                  padding: 10px;
+                  justify-content: center;
+                  align-items: center;
+                  transition: 0.4s;
+
+                  &:hover {
+
+                     border: 3.947px solid #FFF;
+                     background: #F9F1FE;
+
+                     .slide_btn {
+
+                        border: 2.99px solid #BFBFBF;
+                        background: linear-gradient(270deg, #FFBA05 0%, #FAD782 100%);
+                     }
+                  }
+
+
+                  .slide_text {
+                     color: $COLOR_PURPLE;
+                     font-size: $FONT_TITLE_LITTLE;
+                  }
+
+                  .slide_btn {
+                     cursor: pointer;
+                     border-radius: 10.043px;
+                     border: 2.99px solid #BFBFBF;
+                     padding: 10px 12px;
+                     background: linear-gradient(270deg, #FFF 0%, #FFF 100%);
+                  }
+
+               }
+
+            }
+
+            gap: 30px;
+            padding-left: 15px;
+
+
+            @keyframes fadeIn {
+               from {
+                  opacity: 0;
+               }
+
+               to {
+                  opacity: 1;
+               }
+            }
+
+
+            .filter_content_block {
+
+
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               padding-right: 30px;
+               border-right: 4px solid #DEDEDE;
+               animation: fadeIn 0.8s ease-in-out;
+
+               .title_block {
+                  color: #6A30BC;
+                  text-align: center;
+                  font-size: $FONT_TITLE_LITTLE;
+
+               }
+
+               .option {
+                  border-radius: 15px;
+                  color: #6A30BC;
+                  border: 4.92px solid #FFF;
+                  background: #F9F1FE;
+                  text-align: center;
+                  padding: 10px 20px;
+                  cursor: pointer;
+                  transition: 0.4s;
+
+                  &.active {
+                     border: 4.92px solid #FFF;
+                     background: #F8F8F8;
+                  }
+               }
+            }
+         }
+
+
+
+         .filter_title_block {
+
+
+            border-radius: 15px;
+            background: #F9F1FE;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-right: auto;
+            padding-right: 40px;
+
+
+            .filter_block_square {
+
+               border-radius: 15px;
+               background: #AC7AFE;
+               box-shadow: 4px 0px 8px 0px rgba(0, 0, 0, 0.25) inset, -4px 0px 8px 0px rgba(0, 0, 0, 0.25) inset;
+               width: 50px;
+               height: 50px;
+
+            }
+         }
+      }
+   }
+}
+
+@media(max-width:590px) {
+   .filter {
+      padding-top: 20px;
+      margin-top: 100px;
+
+      .wrapper {
+         overflow: hidden;
+
+         .filter_content {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+            padding-left: 0px;
+
+
+            .filter_text {
+               padding-left: 0px;
+            }
+
+            .filter_content_blocks {
+               display: flex;
+               gap: 10px;
+
+               .filter_content_block {
+
+
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  padding-right: 10px;
+
+                  .title_block {
+                     color: #6A30BC;
+                     text-align: center;
+                     font-size: $FONT_TITLE_LITTLE_MOBILE;
+
+                  }
+               }
+
+
+               .filter_content_slider {
+                  display: none;
+
+
+               }
+            }
+         }
+      }
+   }
+}
+
+@media(max-width:360px) {
+   .filter {
+      padding-top: 20px;
+      margin-top: 100px;
+
+      .wrapper {
+         overflow: hidden;
+         padding: 0 10px;
+
+         .filter_content {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+            padding-left: 0px;
+
+
+            .filter_text {
+               padding-left: 0px;
+            }
+
+            .filter_content_blocks {
+               display: flex;
+               gap: 40px;
+               flex-wrap: wrap;
+
+
+               .filter_content_block {
+
+
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  padding-right: 10px;
+
+                  .title_block {
+                     color: #6A30BC;
+                     text-align: center;
+                     font-size: $FONT_TITLE_LITTLE_MOBILE;
+
+                  }
+               }
+
+
+               .filter_content_slider {
+                  display: none;
+
+
+               }
+            }
+         }
+      }
+   }
+}

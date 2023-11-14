@@ -1,0 +1,195 @@
+@import "../../styles/vars.scss";
+
+
+.footer {
+   margin-top: 100px;
+
+   background: $COLOR_BLACK;
+   padding: 40px 0;
+
+   .wrapper {
+      padding: 0 100px;
+
+      .footer_content {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         font-size: $FONT_MAIN_TABLET;
+         color: white;
+
+         .footer_content_text {
+            max-width: 400px;
+         }
+
+         .footer_content_socials {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .social {
+               display: flex;
+               flex-direction: column;
+               gap: 10px;
+               align-items: center;
+
+               img {
+                  width: 30px;
+               }
+
+               .social_title {
+                  text-transform: uppercase;
+               }
+            }
+         }
+
+      }
+   }
+}
+
+
+@media (max-width:990px) {
+   .footer {
+      margin-top: 100px;
+
+      background: $COLOR_BLACK;
+      padding: 40px 0;
+
+      .wrapper {
+         padding: 0 100px;
+
+         .footer_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: $FONT_MAIN_TABLET;
+            color: white;
+
+            .footer_content_text {
+               max-width: 400px;
+            }
+
+            .footer_content_socials {
+               display: flex;
+               gap: 20px;
+               align-items: center;
+
+               .social {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  align-items: center;
+
+                  img {
+                     width: 30px;
+                  }
+
+                  .social_title {
+                     text-transform: uppercase;
+                  }
+               }
+            }
+
+         }
+      }
+   }
+}
+
+
+@media (max-width:700px) {
+   .footer {
+      margin-top: 100px;
+
+      background: $COLOR_BLACK;
+      padding: 40px 0;
+
+      .wrapper {
+         padding: 0 100px;
+
+         .footer_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: $FONT_MAIN_MOBILE;
+            color: white;
+            gap: 20px;
+            flex-direction: column;
+
+            .footer_content_text {
+               max-width: 350px;
+            }
+
+            .footer_content_socials {
+               display: flex;
+               gap: 20px;
+               align-items: center;
+
+               .social {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  align-items: center;
+
+                  img {
+                     width: 30px;
+                  }
+
+                  .social_title {
+                     text-transform: uppercase;
+                  }
+               }
+            }
+
+         }
+      }
+   }
+}
+
+
+@media (max-width:560px) {
+   .footer {
+      margin-top: 100px;
+
+      background: $COLOR_BLACK;
+      padding: 40px 0;
+
+      .wrapper {
+         padding: 0 10px;
+
+         .footer_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: $FONT_MAIN_MOBILE;
+            color: white;
+            gap: 20px;
+            flex-direction: column;
+
+            .footer_content_text {
+               max-width: 300px;
+            }
+
+            .footer_content_socials {
+               display: flex;
+               gap: 20px;
+               align-items: center;
+
+               .social {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  align-items: center;
+
+                  img {
+                     width: 30px;
+                  }
+
+                  .social_title {
+                     text-transform: uppercase;
+                  }
+               }
+            }
+
+         }
+      }
+   }
+}

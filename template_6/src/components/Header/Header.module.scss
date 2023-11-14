@@ -1,0 +1,130 @@
+@mixin headerName {
+  background-color: var(--main);
+  width: 15%;
+  height: 20%;
+  z-index: 10;
+  position: absolute;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+    width: 25%;
+  }
+}
+
+.header {
+  &_page {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+
+    @media (max-width: 600px) {
+      height: 380px;
+    }
+  }
+
+  &_content {
+    position: relative;
+    width: 100%;
+    height: 87%;
+
+    &_bg {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+
+      @media (max-width: 600px) {
+        filter: brightness(75%);
+      }
+    }
+
+    &_left {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin-left: 10%;
+      height: 100%;
+      justify-content: center;
+      position: absolute;
+      z-index: 10;
+
+      @media (max-width: 600px) {
+        width: 82%;
+        align-items: center;
+      }
+
+      &_text {
+        font-size: 26px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+
+        @media (max-width: 600px) {
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+
+      &_btn {
+        width: 30%;
+        height: 8%;
+        margin-top: 5%;
+        border: 2px solid rgba(255, 255, 255, 1);
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          backdrop-filter: brightness(95%) blur(2px);
+        }
+      }
+    }
+  }
+
+  &_name {
+    @include headerName;
+
+    &_hebrew {
+      @include headerName;
+
+      @media (max-width: 600px) {
+        left: 0;
+      }
+    }
+  }
+
+  &_navBtn {
+    div:nth-child(1)::before,
+    div:nth-child(2)::before,
+    div:nth-child(3)::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 15px;
+      background-color: rgba(0, 0, 0, 1);
+      right: 18px;
+    }
+
+    div:nth-child(1)::before {
+      top: 10px;
+    }
+    div:nth-child(2)::before {
+      top: 14px;
+    }
+    div:nth-child(3)::before {
+      top: 18px;
+    }
+
+    @media (min-width: 600px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../styles/vars.scss";
+
+
+.contacts {
+   margin-top: 40px;
+   padding: 50px 0;
+
+   .wrapper {
+      padding-left: 50px;
+
+      .contacts_content {
+         margin-top: 60px;
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+         font-size: $FONT_MAIN_SMALL;
+      }
+   }
+}
+
+@media(max-width:730px) {
+   .contacts {
+      margin-top: 40px;
+      padding: 50px 0;
+
+      .wrapper {
+         padding: 0 20px;
+
+         .contacts_content {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: $FONT_MAIN_SMALL;
+         }
+      }
+   }
+}
+
+
+@media(max-width:430px) {
+   .contacts {
+
+
+      .wrapper {
+         padding: 0 10px;
+
+
+      }
+   }
+}

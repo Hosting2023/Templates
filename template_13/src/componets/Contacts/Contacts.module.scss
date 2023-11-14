@@ -1,0 +1,64 @@
+@import "../../styles/vars.scss";
+
+
+.contacts {
+   margin-top: 140px;
+   padding: 30px 0;
+
+   .wrapper {
+      .contacts_content {
+         display: flex;
+         justify-content: space-between;
+
+
+
+         .contacts_content_right {
+            max-width: 450px;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+            .contacts_icons {
+               display: flex;
+               justify-content: center;
+               gap: 30px;
+
+               img {
+                  cursor: pointer;
+                  width: 40px;
+                  height: 40px;
+               }
+            }
+         }
+
+      }
+   }
+}
+
+@media(max-width:750px) {
+   .contacts {
+      .wrapper {
+         .contacts_content {
+            .contacts_content_right {
+               width: 50%;
+            }
+         }
+      }
+   }
+}
+
+@media(max-width:380px) {
+   .contacts {
+      .wrapper {
+         .contacts_content {
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            .contacts_content_right {
+               width: 100%;
+            }
+         }
+      }
+   }
+}

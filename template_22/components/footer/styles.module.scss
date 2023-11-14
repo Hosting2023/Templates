@@ -1,0 +1,78 @@
+.footer {
+  width: 100%;
+  position: relative;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: auto;
+    @media (max-width: 390px) {
+      max-width: 200px;
+      max-height: 92px;
+    }
+
+    .linksContainer {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      color: #83939f;
+      margin-left: 30%;
+      @media (max-width: 390px) {
+        margin-left: 20%;
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 120px;
+        @media (max-width: 390px) {
+          gap: 30px;
+        }
+
+        .link {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          /* Выравнивание иконок по центру */
+          justify-content: center;
+        }
+      }
+    }
+
+    .downloadContainer {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .download {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .separator {
+        border: 1px solid #aac3d6;
+        transform: rotate(90deg);
+        width: 24px;
+      }
+    }
+
+    .disability {
+      position: absolute;
+      right: 20px;
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
+
+
+  }
+
+  .selectLanguagesWrapper {
+    width: 86px;
+  }
+}

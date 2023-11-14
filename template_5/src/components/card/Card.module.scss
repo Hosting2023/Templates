@@ -1,0 +1,144 @@
+.card_wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 720px;
+  background-color: var(--pomade);
+
+  @media (max-width: 600px) {
+    height: 150px;
+  }
+
+  &_lines {
+    z-index: 10;
+
+    div:nth-child(1)::before,
+    div:nth-child(2)::before,
+    div:nth-child(3)::before,
+    div:nth-child(4)::before,
+    div:nth-child(5)::before {
+      content: '';
+      position: absolute;
+      top: -35px;
+      background: linear-gradient(
+        to bottom,
+        var(--pomade) 50%,
+        var(--ivory) 50%
+      );
+      width: 10px;
+      height: 70px;
+      border-radius: 3px 4px;
+      transform: skew(-28deg);
+
+      @media (max-width: 600px) {
+        height: 15px;
+        width: 3px;
+        top: -7px;
+      }
+    }
+    div:nth-child(1)::before {
+      right: 100px;
+      @media (max-width: 600px) {
+        right: 60px;
+      }
+    }
+    div:nth-child(2)::before {
+      right: 120px;
+      @media (max-width: 600px) {
+        right: 67px;
+      }
+    }
+    div:nth-child(3)::before {
+      right: 140px;
+      @media (max-width: 600px) {
+        right: 74px;
+      }
+    }
+    div:nth-child(4)::before {
+      right: 160px;
+      @media (max-width: 600px) {
+        right: 81px;
+      }
+    }
+    div:nth-child(5)::before {
+      right: 180px;
+      @media (max-width: 600px) {
+        right: 88px;
+      }
+    }
+
+    div:nth-child(1)::after,
+    div:nth-child(2)::after,
+    div:nth-child(3)::after,
+    div:nth-child(4)::after,
+    div:nth-child(5)::after {
+      content: '';
+      position: absolute;
+      bottom: -35px;
+      background: linear-gradient(to top, var(--pomade) 50%, var(--ivory) 50%);
+      width: 10px;
+      height: 70px;
+      border-radius: 3px 4px;
+      transform: skew(-28deg);
+
+      @media (max-width: 600px) {
+        height: 15px;
+        width: 3px;
+        bottom: -7px;
+      }
+    }
+    div:nth-child(1)::after {
+      left: 100px;
+      @media (max-width: 600px) {
+        left: 60px;
+      }
+    }
+    div:nth-child(2)::after {
+      left: 120px;
+      @media (max-width: 600px) {
+        left: 67px;
+      }
+    }
+    div:nth-child(3)::after {
+      left: 140px;
+      @media (max-width: 600px) {
+        left: 74px;
+      }
+    }
+    div:nth-child(4)::after {
+      left: 160px;
+      @media (max-width: 600px) {
+        left: 81px;
+      }
+    }
+    div:nth-child(5)::after {
+      left: 180px;
+      @media (max-width: 600px) {
+        left: 88px;
+      }
+    }
+  }
+}
+
+.card_text {
+  margin-top: 10%;
+  width: 69%;
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: calc(10px + 10 * (100vw - 320px) / 880);
+  letter-spacing: 0em;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    width: 80%;
+    font-size: 10px;
+    padding: 20px 0;
+    margin-top: 0;
+    height: 100%;
+  }
+}

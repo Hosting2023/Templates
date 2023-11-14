@@ -1,0 +1,170 @@
+@mixin slide {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 70%;
+  width: 22%;
+  opacity: 0.5;
+  filter: blur(1px);
+  transition: all 0.3s ease-in-out;
+}
+
+.services {
+  &_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 130dvh;
+    padding: 5%;
+
+    @media (max-width: 600px) {
+      height: 718px;
+      padding: 8%;
+    }
+  }
+
+  &_title {
+    font-size: 4.5vh;
+    font-weight: 700;
+    margin-bottom: 5%;
+
+    @media (max-width: 600px) {
+      font-size: 15px;
+      margin-bottom: 10%;
+    }
+  }
+
+  &_btn {
+    &_prev {
+      left: -3%;
+      top: 45%;
+      position: absolute;
+
+      @media (max-width: 600px) {
+        left: -10%;
+        top: 35%;
+      }
+
+      &:disabled {
+        opacity: 0.6;
+      }
+
+      &_img {
+        width: 40px;
+        @media (max-width: 600px) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    &_next {
+      position: absolute;
+      top: 45%;
+      right: -3%;
+
+      @media (max-width: 600px) {
+        right: -10%;
+        top: 35%;
+      }
+
+      &:disabled {
+        opacity: 0.5;
+      }
+
+      &_img {
+        transform: rotate(180deg);
+        width: 40px;
+        @media (max-width: 600px) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  &_slider {
+    &_wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      @media (max-width: 600px) {
+        width: 85%;
+      }
+    }
+
+    &_slide {
+      &_mobile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &_img {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        border-radius: 15px;
+
+        &_wrapper {
+          position: relative;
+          width: 100%;
+          height: 70%;
+        }
+      }
+
+      &_text {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        &_wrapper {
+          height: 30%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        &_name {
+          margin: 5% 0 2% 0;
+          font-weight: 300;
+          text-transform: uppercase;
+          text-align: center;
+        }
+      }
+
+      &_1 {
+        @include slide;
+        z-index: 10;
+        bottom: 5%;
+        left: 39%;
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1.1);
+        transition: all 0.2 ease-in-out;
+      }
+      &_2 {
+        @include slide;
+        bottom: 15%;
+        right: 5%;
+      }
+
+      &_3 {
+        @include slide;
+        z-index: 1;
+        top: 0;
+        left: 39%;
+      }
+      &_4 {
+        @include slide;
+        bottom: 15%;
+        left: 5%;
+      }
+    }
+  }
+}

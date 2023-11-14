@@ -1,0 +1,27 @@
+name: testing
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - dev
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm ci
+
+      - name: Lint check
+        run: npm run lint
+
+      - name: Check gateway build
+        run: npm run build

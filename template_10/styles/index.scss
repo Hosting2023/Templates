@@ -1,0 +1,158 @@
+@import "./vars.scss";
+
+@font-face {
+   font-family: 'Inter';
+   src: url('./Font/Inter-VariableFont_slnt\,wght.ttf');
+   font-weight: 500;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: $COLOR_BACKGRAUND;
+   font-size: $FONT_MAIN_TEXT;
+   color: $COLOR_TEXT_BLACK;
+   font-family: 'Inter';
+   line-height: normal;
+
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+.wrapper {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1300px;
+   padding: 0 15px;
+}
+
+.space {
+   height: 40px;
+}
+
+.btn {
+   border-radius: 15px;
+   border: 2px solid #494A52;
+   padding: 15px 20px;
+   background-color: transparent;
+   text-transform: uppercase;
+   font-size: $FONT_MAIN_TEXT;
+}
+
+
+
+.title {
+   padding-left: 100px;
+   color: $COLOR_TEXT;
+   font-size: $FONT_TITLE;
+   font-weight: bold;
+}
+
+
+
+@media(max-width:1265px) {
+   .wrapper {
+      max-width: 1000px;
+   }
+
+   body {
+      font-size: $FONT_MAIN_TEXT_DESKSTOP;
+   }
+
+   .title {
+      padding-left: 60px;
+      font-size: $FONT_TITLE_DESKSTOP;
+
+   }
+
+   .btn {
+      font-size: $FONT_SMALL_DESKSTOP;
+
+   }
+
+}
+
+
+@media(max-width:880px) {
+   .wrapper {
+      max-width: 700px;
+      padding: 0 10px;
+   }
+
+   body {
+      font-size: $FONT_MAIN_TEXT_LAPTOP;
+   }
+
+   .title {
+      padding-left: 40px;
+      font-size: $FONT_TITLE_LAPTOP;
+      margin-right: 50px;
+
+   }
+
+   .btn {
+      font-size: $FONT_SMALL_LAPTOP;
+      padding: 10px 20px;
+
+   }
+
+}
+
+
+@media(max-width:540px) {
+   .wrapper {
+      max-width: 450px;
+      padding: 0 10px;
+
+   }
+
+   body {
+      font-size: $FONT_MAIN_TEXT_MOBILE;
+   }
+
+   .title {
+      padding-left: 40px;
+      font-size: $FONT_TITLE_MOBILE;
+      margin-right: 50px;
+
+   }
+
+   .btn {
+      font-size: $FONT_SMALL_MOBILE;
+      padding: 10px 12px;
+
+   }
+
+}
+
+@media(max-width:350px) {
+   .wrapper {
+
+      padding: 0 8px;
+
+   }
+
+   body {
+      font-size: $FONT_MAIN_TEXT_MOBILE;
+   }
+
+   .title {
+      padding-left: 40px;
+      font-size: $FONT_TITLE_MOBILE;
+      margin-right: 20px;
+
+   }
+
+   .btn {
+      font-size: 8px;
+      padding: 10px 12px;
+
+   }
+
+}

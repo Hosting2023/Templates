@@ -1,0 +1,95 @@
+@import '../../styles/variables.scss';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: $backgroundGray;
+  padding-top: 1rem;
+}
+
+.bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: right;
+  margin-bottom: 6rem;
+}
+.links {
+  padding-left: 2rem;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.navLink {
+  transition: 0.2s ease 0s;
+  border: none;
+  background: none;
+  color: $primaryBlackText;
+  @include HeeboBold();
+  font-size: 25px;
+  margin-right: 3rem;
+  &:hover {
+    transition: 0.2s ease 0s;
+    color: $orange;
+  }
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+
+  max-height: 838px;
+  max-width: 1425px;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  max-width: 587px;
+
+  h2 {
+    @include HeeboBold();
+    font-size: 48px;
+    line-height: 54.66px;
+    margin-bottom: 3rem;
+  }
+  h3 {
+    @include HeeboMedium();
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+}
+
+.picture {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  img {
+    object-fit: fill;
+    width: 100%;
+  }
+  margin-right: 15px;
+}
+
+.button {
+  @include orangeButton();
+  text-decoration: underline;
+  padding-inline: 1rem;
+}

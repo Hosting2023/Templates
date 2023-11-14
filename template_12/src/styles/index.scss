@@ -1,0 +1,174 @@
+@import "./vars.scss";
+
+@font-face {
+   font-family: 'Manrope';
+   src: url('./Font/Manrope-VariableFont_wght.ttf');
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.back {
+   width: 100%;
+   height: 100%;
+   background: url("../../public/body2.svg");
+   background-position: center center;
+   background-size: cover;
+   background-size: 100%;
+}
+
+body {
+
+
+   font-size: $FONT_MAIN;
+   font-family: 'Manrope';
+   line-height: normal;
+   color: black;
+}
+
+html {
+   scroll-behavior: smooth;
+
+
+}
+
+
+
+.wrapper {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1150px;
+   padding: 0 15px;
+}
+
+.btn {
+   border-radius: 30px;
+   padding: 10px 40px;
+   background-color: transparent;
+   font-size: $FONT_MAIN_SMALL;
+   border: 2px solid $COLOR_YELLOW;
+   transition: 0.4s;
+   color: $COLOR_YELLOW;
+
+   &:hover {
+      background-color: $COLOR_YELLOW;
+      color: black;
+   }
+}
+
+a {
+   color: black;
+}
+
+.title {
+   font-size: $FONT_TITLE;
+   font-weight: bold;
+   color: $COLOR_WHITE;
+   text-transform: uppercase;
+}
+
+
+@media (max-width:945px) {
+   body {
+      font-size: $FONT_MAIN_TABLET;
+
+   }
+
+   .title {
+      font-size: $FONT_TITLE_TABLET;
+
+   }
+
+   .btn {
+      border-radius: 30px;
+      padding: 10px 20px;
+      background-color: transparent;
+      font-size: $FONT_MAIN_SMALL_TABLET;
+   }
+
+   .back {
+      width: 100%;
+      height: 100%;
+      background: url("../../public/body2.svg");
+      background-position: center center;
+      background-size: cover;
+      background-size: 160%;
+   }
+}
+
+@media (max-width:730px) {
+   body {
+      font-size: $FONT_MAIN_MOBILE;
+
+   }
+
+   .wrapper {
+
+      padding: 0 20px;
+   }
+
+   .title {
+      font-size: $FONT_TITLE_MOBILE;
+
+   }
+
+   .btn {
+      border-radius: 30px;
+      padding: 5px 20px;
+      background-color: transparent;
+      font-size: $FONT_MAIN_SMALL_MOBILE;
+   }
+
+   .back {
+      width: 100%;
+      height: 100%;
+      background: url("../../public/body2.svg");
+      background-position: center center;
+      background-size: cover;
+      background-size: 150%;
+   }
+}
+
+@media (max-width:600px) {
+   body {
+      font-size: $FONT_MAIN_MOBILE;
+
+   }
+
+   .wrapper {
+
+      padding: 0 10px;
+   }
+
+   .title {
+      font-size: $FONT_TITLE_MOBILE;
+
+   }
+
+   .btn {
+      border-radius: 30px;
+      padding: 5px 15px;
+      background-color: transparent;
+      font-size: $FONT_MAIN_SMALL_MOBILE;
+   }
+
+   .back {
+      width: 100%;
+      height: 100%;
+      background: url("../../public/body2.svg");
+      background-position: center center;
+      background-size: cover;
+      background-size: 170%;
+   }
+}
+
+
+@media (max-width:320px) {
+   body {
+      width: 320px;
+   }
+}

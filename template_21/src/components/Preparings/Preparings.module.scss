@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.prepares {
+  max-width: 76%;
+}
+
+.prepare {
+  padding: 2rem 3rem 2rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-self: center;
+  background-color: $backgroundGray;
+  border-radius: 10px;
+  h4 {
+    @include PTMonoSmall();
+    font-size: 28px;
+    line-height: 28px;
+  }
+  margin-bottom: 1rem;
+  &:last-child {
+    margin-bottom: 2rem;
+  }
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include HeeboMedium();
+  font-size: 35px;
+  line-height: 51px;
+  margin-right: 3rem;
+  text-align: center;
+}
+
+.learn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    cursor: pointer;
+    transition: 0.2s ease 0s;
+    text-decoration: underline;
+    text-transform: uppercase;
+    @include HeeboSmall();
+    font-size: 30px;
+    line-height: 34px;
+    color: $primaryBlackText;
+    &:hover {
+      transition: 0.2s ease 0s;
+      color: $orange;
+    }
+  }
+}

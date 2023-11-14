@@ -1,0 +1,182 @@
+{
+    "Header": {
+        "menu": {
+            "about": "about",
+            "services": "services",
+            "schedule": "schedule",
+            "reviews": "reviews",
+            "questions": "questions",
+            "contacts": "contacts"
+        }
+    },
+    "main": {
+        "title": "Professional cleaning",
+        "tagline": "for a flawless home",
+        "text": "Order cleaning now and open the doors to your personal corner of impeccable cleanliness and comfort.",
+        "order": "order"
+    },
+    "Reviews": {
+        "reviews": "reviews",
+        "button": "add feedback",
+        "emily": {
+            "name": "Emily Wheeler",
+            "review": "I ordered cleaning after moving in, and the maid did a miracle! The apartment looked brand new - no dust, no traces of construction work and no mess. I recommend her to anyone who is looking for a reliable assistant after moving!"
+        },
+        "john": {
+            "name": "John Perry",
+            "review": "The maid showed incredible attention to detail and made my house incredibly clean and tidy. She was polite, kind and professional. I can no longer imagine my life without her help. Great job!"
+        },
+        "irene": {
+            "name": "Irene Cook",
+            "review": "When I came home, I saw impeccable cleanliness. The maid not only cleans at the highest level, but also gives a special atmosphere of coziness and comfort. Thanks to her, my house has become a real corner of relaxation. I recommend her services to everyone."
+        }
+    },
+    "About": {
+        "label": "About Me",
+        "title": "My name is maria <br></br>and I am a maid",
+        "greetings": "Greetings! My name is Anna and I am a maid with years of experience in the cleaning industry. My vocation is to create cleanliness and comfort in people's homes.",
+        "text": "Over the years, I have gained skills and experience that allow me to do cleaning at the highest level. I am attentive to details and strive for impeccable cleanliness in every corner of your home.<br></br><br></br><br></br>Let me take care of your home and create perfect cleanliness in it. Book my services now and I promise you won't regret it. Together we will turn your home into a cozy nest where you can relax and enjoy life.<br></br><br></br>Don't delay, let's make your home perfectly clean right now!"
+    },
+    "Benefits": {
+        "professionalism": "Professionalism",
+        "attention": "Attention to detail",
+        "personalized": "Personalized approach",
+        "time": "Time saving"
+    },
+    "Services": {
+        "label": "services",
+        "title": "list of services that I provide",
+        "regularCleaning": {
+            "title": "regular cleaning ",
+            "text": "services will help keep your home in perfect condition on an ongoing basis."
+        },
+        "windowCleaning": {
+            "title": "Window cleaning ",
+            "text": "services include cleaning windows from dust, dirt and stains, using professional tools and techniques."
+        },
+        "afterRepairing": {
+            "cleaning": "Cleaning services ",
+            "title": "after moving ",
+            "text": "in include cleaning, removing construction dust, sticky residue and debris, and preparing your new home for moving in."
+        },
+        "afterRelocation": {
+            "cleaning": "Cleaning services ",
+            "title": "after repair ",
+            "text": "will help to return your home to its original state after the completion of construction work."
+        }
+    },
+    "ad": {
+        "free": "Free yourself from tiresome cleaning and leave this care to us. I, as a professional maid, ",
+        "willCreate": "will create perfect cleanliness in your home ",
+        "soThat": "so that you can enjoy your free time and serenity. ",
+        "dontDelay": "Don't delay, let's make your home perfectly clean right now!"
+    },
+    "Filter": {
+        "title": "Filter",
+        "frequency": {
+            "title": "Frequency",
+            "oneTime": "One-time",
+            "twiceAWeek": "Twice a week",
+            "everyWeek": "Every week"
+        },
+        "allergy": {
+            "title": "Allergy",
+            "none": "None",
+            "cat": "Cat",
+            "dog": "Dog"
+        },
+        "cleaning": {
+            "title": "Type",
+            "regularCleaning": "Regular cleaning",
+            "windowCleaning": "Window cleaning",
+            "afterRepairing": "After repairing",
+            "afterRelocation": "After relocation"
+        },
+        "address": {
+            "placeholder": "Address",
+            "button": "SEARCH"
+        },
+        "schedule": "schedule",
+        "week": {
+            "sun": "Sun",
+            "mon": "Mon",
+            "tue": "Tue",
+            "wed": "Wed",
+            "thu": "Thu",
+            "fri": "Fri",
+            "sat": "Sat"
+        },
+        "order": "order"
+    },
+    "Faq": {
+        "faq": "frequently asked questions\nfrom customers",
+        "label": "questions",
+        "ques1": {
+            "q": "Do you have any recommendations for preparing a room for cleaning?",
+            "q1": "Do you have any recommendations for",
+            "q2": "preparing a room for cleaning?",
+            "a": "For maximum cleaning efficiency, it is recommended to free surfaces from personal belongings and objects. If you have any special requirements or wishes, please let us know in advance so that we can take them into account when planning your cleaning."
+        },
+        "ques2": {
+            "q1": "How do you solve problems if I am not completely ",
+            "q2": "satisfied with the cleaning result?",
+            "a": "Your satisfaction is our priority. If you are not completely satisfied with the cleaning result, please contact our team within 24 hours after the cleaning and we will be happy to solve any problems. We guarantee your complete satisfaction and will make every effort to correct any shortcomings."
+        },
+        "ques3": {
+            "q1": "What happens if something in my house ",
+            "q2": "is accidentally damaged while cleaning?",
+            "a": "We take all necessary precautions and care when performing work. However, in the event that anything is accidentally damaged during cleaning, please notify us immediately. We will consider each situation individually and take all necessary steps to repair or compensate."
+        },
+        "ques4": {
+            "q": "How often do you recommend regular cleaning to keep your home clean?",
+            "q1": "How often do you recommend regular",
+            "q2": "cleaning to keep your home clean?",
+            "a": "The recommended frequency of regular cleaning depends on the individual needs and characteristics of your home. Generally, regular cleaning once or twice a week is recommended, but we can offer you a more flexible schedule to suit your needs and preferences."
+        }
+    },
+    "Contacts": {
+        "title": "CONTACTS",
+        "messengers": {
+            "whatsapp": "WhatsApp",
+            "viber": "Viber",
+            "telegram": "Telegram"
+        }
+    },
+    "Auth": {
+        "button": {
+            "singUp": "sing up",
+            "logIn": "log in",
+            "next": "next",
+            "back": "back",
+            "send": "send",
+            "done": "done"
+        },
+        "placeholder": {
+            "firstName": "First name",
+            "lastName": "Last name",
+            "dateOfBirth": "Date of birth",
+            "email": "Email",
+            "mobilePhone": "Mobile phone",
+            "emailOrPhoneNumber": "Email or phone number",
+            "password": "Password",
+            "newPassword": "New password",
+            "repeatNewPassword": "Repeat new password",
+            "verificationCode": "Verification code",
+            "pleaseEnterEmail": "Please enter email you registered with",
+            "wrongFormat": "Wrong format"
+        },
+        "title": {
+            "singUp": "Sing Up",
+            "logIn": "Log In",
+            "verification": "Verification",
+            "forgotPassword": "Forgot password",
+            "yourPasswordWasChanged": "Your password was changed "
+        },
+        "hint": {
+            "forgotPassword": "Forgot password?",
+            "code": "Code",
+            "expirationTime": "expiration time",
+            "hasExpired": "has expired"
+        }
+    }
+}

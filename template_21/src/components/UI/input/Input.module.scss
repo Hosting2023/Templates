@@ -1,0 +1,25 @@
+@import '../../../styles/variables.scss';
+
+.password {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.dark {
+  @include input();
+}
+
+.light {
+  @include input();
+  background-color: $backgroundGray;
+  color: black;
+}
+
+.view {
+  position: absolute;
+  top: 30%;
+  right: 3%;
+}

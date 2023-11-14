@@ -1,0 +1,48 @@
+.popupMenu {
+  position: absolute;
+  width: 100px;
+  height: 195px;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+}
+
+.menu {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.menuLink {
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &.active {
+    color: white;
+    background-color: #007bff;
+  }
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+.menuLinkText{
+  color: #000;
+  font-family: Red Hat Text, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+

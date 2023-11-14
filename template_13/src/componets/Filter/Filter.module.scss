@@ -1,0 +1,223 @@
+@import "../../styles/vars.scss";
+
+
+.filter {
+   margin-top: 100px;
+
+   .wrapper {
+      .filter_content {
+         display: flex;
+         flex-direction: column;
+         gap: 80px;
+
+         .filter_content_up {
+            display: flex;
+            gap: 10px;
+
+            .filter_title {
+               width: 50%;
+            }
+
+            .filter_content_choise {
+               width: 50%;
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+
+               .choise {
+                  display: flex;
+                  gap: 20px;
+                  align-items: center;
+
+                  .choise_text {
+                     flex: 1;
+
+                  }
+
+                  .customCheckbox {
+                     appearance: none;
+                     width: 20px;
+                     height: 20px;
+                     background-color: #F2E2D2;
+                     border-radius: 5px;
+                     cursor: pointer;
+                     position: relative;
+                  }
+
+                  .customCheckbox:checked {
+                     background-color: #F2E2D2;
+                  }
+
+                  .customCheckbox::before {
+                     content: "";
+                     position: absolute;
+                     width: 7px;
+                     height: 14px;
+                     border: 2px solid #000;
+                     border-top: none;
+                     border-left: none;
+                     transform: rotate(45deg) translate(-50%, -50%);
+                     top: 50%;
+                     left: 25%;
+                     opacity: 0;
+                     transition: opacity 0.3s ease-in-out;
+                  }
+
+                  .customCheckbox:checked::before {
+                     opacity: 1;
+                  }
+               }
+            }
+         }
+
+         .filter_content_down {
+            display: flex;
+            gap: 40px;
+
+            .filter_content_blocks {
+               width: 50%;
+               display: flex;
+               justify-content: space-between;
+            }
+
+            .filter_block_input {
+               display: flex;
+               justify-content: space-between;
+               width: 50%;
+
+               .filter_input {
+                  width: 100%;
+                  max-width: 400px;
+                  background-color: $COLOR_BROWN;
+
+                  border-radius: 10px;
+                  display: flex;
+                  flex-direction: column;
+                  padding: 10px 24px;
+
+                  input {
+                     padding: 4px;
+                     background-color: transparent;
+                  }
+
+                  .line {
+                     width: 100%;
+                     height: 1px;
+                     background-color: $COLOR_PURPLE;
+                     ;
+                  }
+
+               }
+
+            }
+         }
+      }
+   }
+}
+
+
+
+@media (max-width:1075px) {
+   .filter {
+      .wrapper {
+         .filter_content {
+            .filter_content_down {
+               display: flex;
+               gap: 40px;
+               flex-direction: column;
+
+               .filter_content_blocks {
+                  width: 100%;
+                  display: flex;
+                  gap: 20px;
+                  justify-content: center;
+               }
+
+               .filter_block_input {
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+                  gap: 20px;
+
+
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@media (max-width:500px) {
+   .filter {
+      .wrapper {
+         .filter_content {
+
+
+
+            .filter_content_up {
+               width: 50%;
+               gap: 20px;
+               flex-direction: column;
+               margin-left: auto;
+
+               .filter_title {
+                  width: 100%;
+               }
+
+               .filter_content_choise {
+
+                  width: 100%;
+               }
+
+            }
+
+            .filter_content_down {
+               display: flex;
+               gap: 40px;
+               flex-direction: column;
+
+               .filter_content_blocks {
+                  width: 100%;
+                  display: flex;
+                  gap: 20px;
+                  justify-content: center;
+                  flex-wrap: wrap;
+               }
+
+               .filter_block_input {
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+                  gap: 20px;
+                  flex-direction: column;
+                  align-items: center;
+
+                  .btn {
+                     margin: 0 auto;
+                  }
+
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (max-width:380px) {
+   .filter {
+      .wrapper {
+         .filter_content {
+
+
+
+            .filter_content_up {
+               width: 100%;
+            }
+
+
+
+         }
+      }
+   }
+}

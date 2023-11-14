@@ -1,0 +1,576 @@
+@import "../../styles/vars.scss";
+
+.schedule {
+   margin-top: 140px;
+   padding-top: 60px;
+
+   .filter_line {
+      margin-top: 50px;
+   }
+
+   .wrapper {
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+
+      .btn_order {
+         margin: 0 auto;
+         margin-top: 40px;
+
+      }
+
+
+      .schedule_content {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+
+         .btn {
+
+            margin: 0 auto;
+            margin-top: 10px;
+         }
+
+         .schedule_main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+         }
+
+
+         .schedule_table {
+            margin-top: 60px;
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+
+            font-size: 10px;
+
+            th,
+            td {
+               padding: 5px;
+               text-align: center;
+               width: 40px;
+               height: 20px;
+               box-sizing: border-box;
+               position: relative;
+               border: 1px solid black;
+
+            }
+
+            th {
+               padding-top: 20px;
+               border-top-left-radius: 20px;
+               border-top-right-radius: 20px;
+            }
+
+            .hide {
+               border: none;
+            }
+
+            tbody {
+               position: relative;
+
+               .day {
+
+                  position: relative;
+               }
+
+               .selected_cell {
+                  background: white;
+                  ;
+               }
+
+               td {
+                  &.times {
+                     text-align: right;
+                     border: none;
+                  }
+
+                  &.days_row th {
+
+                     &:before,
+                     &:after {
+                        content: none;
+                     }
+
+                     border: none;
+                     padding: 8px;
+                     text-align: center;
+                     border-bottom: 1px solid black;
+                     border-top: 1px solid black;
+                     border-left: none;
+                     border-right: none;
+                     border-bottom-left-radius: 10px;
+                  }
+               }
+            }
+         }
+      }
+
+   }
+}
+
+@media (max-width:945px) {
+   .schedule {
+      margin-top: 140px;
+      padding-top: 60px;
+
+      .filter_line {
+         margin-top: 50px;
+      }
+
+      .wrapper {
+         padding-left: 30px;
+         display: flex;
+         flex-direction: column;
+
+         .btn_order {
+            margin: 0 auto;
+            margin-top: 40px;
+
+         }
+
+
+         .schedule_content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .btn {
+
+               margin: 0 auto;
+               margin-top: 10px;
+            }
+
+            .schedule_main {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+            }
+
+
+            .schedule_table {
+               margin-top: 60px;
+               width: 100%;
+               border-collapse: separate;
+               border-spacing: 0;
+
+               font-size: 10px;
+
+               th,
+               td {
+                  padding: 3px;
+                  text-align: center;
+                  width: 40px;
+                  height: 10px;
+                  box-sizing: border-box;
+                  position: relative;
+                  border: 1px solid black;
+
+               }
+
+               th {
+                  padding-top: 20px;
+                  border-top-left-radius: 20px;
+                  border-top-right-radius: 20px;
+               }
+
+               .hide {
+                  border: none;
+               }
+
+               tbody {
+                  position: relative;
+
+                  .day {
+
+                     position: relative;
+                  }
+
+                  .selected_cell {
+                     background: white;
+                     ;
+                  }
+
+                  td {
+                     &.times {
+                        text-align: right;
+                        border: none;
+                     }
+
+                     &.days_row th {
+
+                        &:before,
+                        &:after {
+                           content: none;
+                        }
+
+                        border: none;
+                        padding: 8px;
+                        text-align: center;
+                        border-bottom: 1px solid black;
+                        border-top: 1px solid black;
+                        border-left: none;
+                        border-right: none;
+                        border-bottom-left-radius: 10px;
+                     }
+                  }
+               }
+            }
+         }
+
+      }
+   }
+}
+
+@media (max-width:730px) {
+   .schedule {
+      margin-top: 140px;
+      padding-top: 60px;
+
+      .filter_line {
+         margin-top: 50px;
+      }
+
+      .wrapper {
+         padding: 0 20px;
+         display: flex;
+         flex-direction: column;
+
+         .btn_order {
+            margin: 0 auto;
+            margin-top: 40px;
+
+         }
+
+
+         .schedule_content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .btn {
+
+               margin: 0 auto;
+               margin-top: 10px;
+            }
+
+            .schedule_main {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+            }
+
+
+            .schedule_table {
+               margin: 0 auto;
+               margin-top: 60px;
+               width: 100%;
+
+               border-collapse: separate;
+               border-spacing: 0;
+
+               font-size: 9px;
+
+               th,
+               td {
+                  padding: 3px;
+                  text-align: center;
+                  width: 40px;
+                  height: 10px;
+                  box-sizing: border-box;
+                  position: relative;
+                  border: 1px solid black;
+
+               }
+
+               th {
+                  padding-top: 20px;
+                  border-top-left-radius: 20px;
+                  border-top-right-radius: 20px;
+               }
+
+               .hide {
+                  border: none;
+               }
+
+               tbody {
+                  position: relative;
+
+                  .day {
+
+                     position: relative;
+                  }
+
+                  .selected_cell {
+                     background: white;
+                     ;
+                  }
+
+                  td {
+                     &.times {
+                        text-align: right;
+                        border: none;
+                     }
+
+                     &.days_row th {
+
+                        &:before,
+                        &:after {
+                           content: none;
+                        }
+
+                        border: none;
+                        padding: 8px;
+                        text-align: center;
+                        border-bottom: 1px solid black;
+                        border-top: 1px solid black;
+                        border-left: none;
+                        border-right: none;
+                        border-bottom-left-radius: 10px;
+                     }
+                  }
+               }
+            }
+         }
+
+      }
+   }
+}
+
+@media (max-width:600px) {
+   .schedule {
+      margin-top: 140px;
+      padding-top: 60px;
+
+      .filter_line {
+         margin-top: 50px;
+      }
+
+      .wrapper {
+         padding: 0 10px;
+         display: flex;
+         flex-direction: column;
+
+         .btn_order {
+            margin: 0 auto;
+            margin-top: 40px;
+
+         }
+
+
+         .schedule_content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .btn {
+
+               margin: 0 auto;
+               margin-top: 10px;
+            }
+
+            .schedule_main {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+            }
+
+
+            .schedule_table {
+               margin: 0 auto;
+               margin-top: 60px;
+               width: 100%;
+
+               border-collapse: separate;
+               border-spacing: 0;
+
+               font-size: 8px;
+
+               th,
+               td {
+                  padding: 2px;
+                  text-align: center;
+                  width: 10px;
+                  height: 10px;
+                  box-sizing: border-box;
+                  position: relative;
+                  border: 1px solid black;
+
+               }
+
+               th {
+                  padding-top: 20px;
+                  border-top-left-radius: 20px;
+                  border-top-right-radius: 20px;
+               }
+
+               .hide {
+                  border: none;
+               }
+
+               tbody {
+                  position: relative;
+
+                  .day {
+
+                     position: relative;
+                  }
+
+                  .selected_cell {
+                     background: white;
+                     ;
+                  }
+
+                  td {
+                     &.times {
+                        text-align: right;
+                        border: none;
+                     }
+
+                     &.days_row th {
+
+                        &:before,
+                        &:after {
+                           content: none;
+                        }
+
+                        border: none;
+                        padding: 8px;
+                        text-align: center;
+                        border-bottom: 1px solid black;
+                        border-top: 1px solid black;
+                        border-left: none;
+                        border-right: none;
+                        border-bottom-left-radius: 10px;
+                     }
+                  }
+               }
+            }
+         }
+
+      }
+   }
+}
+
+
+@media (max-width:520px) {
+   .schedule {
+      margin-top: 140px;
+      padding-top: 60px;
+
+      .filter_line {
+         margin-top: 50px;
+      }
+
+      .wrapper {
+         padding: 0 10px;
+         display: flex;
+         flex-direction: column;
+
+         .btn_order {
+            margin: 0 auto;
+            margin-top: 40px;
+
+         }
+
+
+         .schedule_content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .btn {
+
+               margin: 0 auto;
+               margin-top: 10px;
+            }
+
+            .schedule_main {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+            }
+
+
+            .schedule_table {
+               margin: 0 auto;
+               margin-top: 60px;
+               width: 100%;
+
+               border-collapse: separate;
+               border-spacing: 0;
+
+               font-size: 5px;
+
+               th,
+               td {
+                  padding: 0px;
+                  text-align: center;
+                  width: 0px;
+                  height: 20px;
+                  box-sizing: border-box;
+                  position: relative;
+                  border: 1px solid black;
+
+               }
+
+               th {
+                  padding-top: 20px;
+                  border-top-left-radius: 20px;
+                  border-top-right-radius: 20px;
+               }
+
+               .hide {
+                  border: none;
+               }
+
+               tbody {
+                  position: relative;
+
+                  .day {
+
+                     position: relative;
+                  }
+
+                  .selected_cell {
+                     background: white;
+                     ;
+                  }
+
+                  td {
+                     &.times {
+                        text-align: right;
+                        border: none;
+                     }
+
+                     &.days_row th {
+
+                        &:before,
+                        &:after {
+                           content: none;
+                        }
+
+                        border: none;
+                        padding: 8px;
+                        text-align: center;
+                        border-bottom: 1px solid black;
+                        border-top: 1px solid black;
+                        border-left: none;
+                        border-right: none;
+                        border-bottom-left-radius: 10px;
+                     }
+                  }
+               }
+            }
+         }
+
+      }
+   }
+}

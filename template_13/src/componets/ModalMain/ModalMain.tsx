@@ -1,0 +1,56 @@
+import React, { useEffect } from 'react'
+import Modal from '../Modal/Modal';
+import ModalSignUp from '../ModalSignUp/ModalSignUp';
+import ModalLogin from '../ModalLogin/ModalLogin';
+import styles from './ModalMain.module.scss';
+import Image from 'next/image';
+import facebook from '@/public/Facebook.svg';
+import google from '@/public/Google.svg';
+function ModalMain({ openValue, ChangeOpen, contentNum }: {
+   openValue: boolean,
+   ChangeOpen: (val: boolean) => void
+   contentNum?: number
+}) {
+   const [content, setContent] = React.useState<number>(0)
+
+   useEffect(() => {
+      if (contentNum) {
+         setContent(contentNum)
+      }
+   }, [contentNum])
+   const CloseModal = (): void => {
+      ChangeOpen(false)
+   }
+   return (
+      <>
+         <Modal open={openValue} onClose={CloseModal} >
+            {content === 0 && <Content setValue={(el: number) => setContent(el)} />}
+            {content === 1 && <ModalSignUp />}
+            {content === 2 && <ModalLogin />}
+         </Modal>
+      </>
+   )
+}
+
+
+
+const Content = ({ setValue }: any) => {
+   return (
+      <div className={styles.content_main}>
+         <div className={styles.buttons}>
+            <button className={`${styles.button} btn ${styles.signup}`} onClick={() => setValue(1)}>Sign up</button>
+            <button className={`${styles.button} btn ${styles.login}`} onClick={() => setValue(2)}>Log in</button>
+         </div>
+         <div className={styles.orText}>or</div>
+         <div className={styles.icons}>
+            <div className={styles.icon}>
+               <Image src={facebook} alt="Facebook" />
+            </div>
+            <div className={styles.icon}>
+               <Image src={google} alt="Google" />
+            </div>
+         </div>
+      </div>
+   )
+}
+export default ModalMain;

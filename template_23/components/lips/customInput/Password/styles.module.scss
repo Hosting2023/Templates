@@ -1,0 +1,51 @@
+.container {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+}
+
+.error {
+  padding-right: 34px !important;
+}
+
+.toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  cursor: pointer;
+
+  &:checked ~ .line {
+    display: block;
+  }
+}
+
+.line {
+  display: none;
+  width: 1px;
+  background: #383f43;
+  height: 24px;
+  position: absolute;
+  transform: rotate(52deg);
+  top: 0px;
+  left: 10px;
+  pointer-events: none;
+}
+
+.passwordButton {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+
+  &:hover,
+  &:active {
+    box-shadow: none;
+    background: transparent;
+  }
+
+  img {
+    width: 20px;
+  }
+}

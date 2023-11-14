@@ -1,0 +1,125 @@
+.sliders {
+   .wrapper {
+      width: 100%;
+      padding: 0;
+      max-width: 1240px;
+   }
+
+   .slider-container {
+      position: relative;
+      margin-top: 40px;
+      overflow: hidden;
+
+      .slider {
+         display: flex;
+         transition: transform 0.3s ease-in-out;
+         white-space: nowrap;
+         overflow: hidden;
+         margin: 0 auto;
+         max-width: 90%;
+      }
+
+      .slides {
+         display: flex;
+      }
+
+      .slide {
+         flex-shrink: 0;
+         padding: 20px;
+         margin-right: 10px !important;
+         height: 100%;
+      }
+
+      .slider-button {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         width: 50px;
+         height: 50px;
+         border: none;
+         color: none;
+         background-color: none;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         img {
+            width: 40px;
+            height: 40px;
+            z-index: 100;
+         }
+
+         cursor: pointer;
+         outline: none;
+         transition: opacity 0.3s ease-in-out;
+
+         &-prev {
+            left: 0px;
+
+            img {
+               transform: rotate(180deg);
+            }
+         }
+
+         &-next {
+            right: 0px;
+         }
+
+         .slider-button-icon {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+
+         &:hover {
+            opacity: 0.8;
+         }
+
+         &:disabled {
+            pointer-events: none;
+            opacity: 0.5;
+         }
+      }
+   }
+}
+
+@media (max-width: 830px) {
+   .sliders .slider-container .slider-button img {
+      width: 20px;
+      height: 20px;
+   }
+
+
+
+   .sliders .slider-container .slider-button-prev {
+      left: -10px;
+   }
+
+}
+
+@media (max-width: 540px) {
+
+
+
+
+   .sliders .slider-container .slider-button-prev {
+      left: -15px;
+   }
+
+   .sliders .slider-container .slider-button-next {
+      right: -5px;
+   }
+
+}
+
+@media (max-width:400px) {
+   .sliders .slider-container .slide {
+      flex-shrink: 0;
+      padding: 5px;
+      margin-right: 5px;
+      height: 100%;
+   }
+
+}

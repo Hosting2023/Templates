@@ -1,0 +1,114 @@
+@import "../../styles/vars.scss";
+
+.reviews {
+   margin-top: 90px;
+   position: relative;
+
+
+   .reviews_content {
+      .slide {
+         padding: 15px;
+         background-color: $COLOR_BROWN;
+         border-radius: 30px;
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         height: 100%;
+
+         .slide_up {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .slide_img {
+               width: 100px;
+               max-height: 200px;
+            }
+
+            .slide_info {
+               display: flex;
+               flex-direction: column;
+               gap: 15px;
+
+
+               .slide_visit {
+                  .user {
+                     width: 30px;
+                     height: 30px;
+                  }
+
+                  display: flex;
+                  gap: 10px;
+                  align-items: center;
+                  color: rgba(0, 0, 0, 0.4);
+                  font-size: $FONT_MAIN_SMALL;
+
+                  span {
+                     color: $COLOR_PURPLE;
+                  }
+               }
+            }
+
+         }
+
+         .slide_down {
+            padding: 0 10px;
+            font-size: $FONT_MAIN_SMALL;
+         }
+      }
+
+   }
+
+}
+
+@media(max-width:750px) {
+
+   .reviews {
+      margin-top: 90px;
+      position: relative;
+
+
+      .reviews_content {
+         .slide {
+            padding: 10px;
+            gap: 5px;
+            height: 100%;
+
+            .slide_up {
+               display: flex;
+               gap: 10px;
+               align-items: center;
+
+               .slide_img {
+                  width: 80px;
+
+               }
+
+               .slide_info {
+
+                  gap: 10px;
+
+                  .slide_visit {
+                     .user {
+                        width: 20px;
+                        height: 20px;
+                     }
+
+                     font-size: $FONT_MAIN_SMALL_TABLET;
+
+
+                  }
+               }
+
+            }
+
+            .slide_down {
+               font-size: $FONT_MAIN_SMALL_TABLET;
+               padding: 0 5px;
+            }
+         }
+
+      }
+
+   }
+}

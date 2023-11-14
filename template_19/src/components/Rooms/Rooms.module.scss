@@ -1,0 +1,62 @@
+.rooms {
+  width: 100%;
+  padding: 90px 140px;
+
+  .content {
+    width: 100%;
+    overflow-x: hidden;
+
+    .carousel_layout {
+      width: 100%;
+      display: flex;
+
+      .carousel {
+        min-width: 130%;
+        animation: rotate360 60s linear infinite;
+        display: flex;
+        justify-content: space-between;
+        transition: 0.3s;
+        position: relative;
+
+        @keyframes rotate360 {
+          from {
+            transform: translateX(0%);
+          }
+          to {
+            transform: translateX(-100%);
+          }
+        }
+      }
+
+    }
+
+
+  }
+}
+
+.rooms.ivrit_version {
+  direction: rtl;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+  .rooms {
+    padding: 50px 140px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .rooms {
+    padding: 50px 10%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .rooms {
+    padding: 10px 10%;
+  }
+}

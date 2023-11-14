@@ -1,0 +1,85 @@
+@import "./vars.scss";
+
+@font-face {
+   font-family: 'DM Sans';
+   src: url('./Fonts/DMSans-VariableFont_opsz,wght.ttf');
+   font-weight: 400;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+body {
+   font-family: 'DM Sans';
+   background-color: rgb(206, 226, 238);
+   font-size: $MAIN_TEXT_SIZE;
+
+}
+
+.wrapper {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+@media (max-width: 960px) {
+   .wrapper {
+      max-width: 800px;
+   }
+
+   body {
+      font-size: 1rem;
+   }
+}
+
+@media (max-width: 740px) {
+   .wrapper {
+      max-width: 600px;
+      padding: 0 5px;
+   }
+
+   body {
+      overflow: scroll;
+      font-size: 0.8rem;
+   }
+
+   .no-scroll {
+      overflow: auto;
+   }
+}
+
+@media (max-width: 560px) {
+   .wrapper {
+      max-width: 400px;
+   }
+
+   body {
+      font-size: 0.7rem;
+   }
+}
+
+.no-scroll {
+   overflow: hidden;
+}
+
+@media (max-width: 400px) {
+   .wrapper {
+      padding: 0 10px;
+   }
+
+   body {
+      font-size: 0.6rem;
+   }
+}

@@ -1,0 +1,18 @@
+.advantages {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.advantage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  h3 {
+    margin-top: 1rem;
+  }
+}

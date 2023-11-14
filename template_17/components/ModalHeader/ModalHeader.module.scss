@@ -1,0 +1,46 @@
+@import "../../app/[locale]/variables.scss";
+
+.modalHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+
+    & button {
+        margin: 28px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    &__title {
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 30.252px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    @media only screen and (max-width: 833px) {
+        & button {
+            width: 10px;
+            height: 10px;
+            margin: 8px;
+
+            & img {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        &__title {
+            width: 100%;
+            height: 18px;
+            padding-top: 2.8px;
+            font-size: 8.55px;
+        }
+    }
+}

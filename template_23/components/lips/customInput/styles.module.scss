@@ -1,0 +1,165 @@
+@mixin activeContainer() {
+  box-shadow: unset;
+
+  @media (max-width: 768px) {
+    padding-bottom: 4px;
+  }
+}
+
+@mixin activeLabel() {
+  transform: translate(0, -35px);
+  padding-bottom: 0;
+
+  @media (max-width: 768px) {
+    transform: translate(0, -25px);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .inputWrapper {
+
+    position: relative;
+    margin: 0 10%;
+
+    &.wrapperDefault {
+      background: unset;
+    }
+  }
+
+  &.wrapperDefault .inputWrapper {
+    background: unset;
+  }
+
+  .inputWrapper:focus-within {
+    background: unset;
+  }
+
+  &.boxShadow .inputWrapper {
+    height: 46px;
+    padding: 16px 15px 10px;
+
+
+    .input {
+      // line-height: 19px;
+      border-radius: 106px;
+      background: #f2f1e1;
+      box-shadow: 0px 7.06943px 17.67357px 0px rgba(0, 0, 0, 0.25) inset;
+      padding: 5% 2%;
+    }
+  }
+
+  &.line .inputWrapper {
+    height: 39px;
+    padding: 15px 0 5px;
+    border-bottom: 1px solid #ede4e8 !important;
+    line-height: 14px;
+  }
+
+  &.lineText {
+    &.line .inputWrapper {
+      border-bottom: unset !important;
+    }
+  }
+
+  &.containerError {
+    &.boxShadow .inputWrapper {
+      border: 0.5px solid #ff4040;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    &.line .inputWrapper {
+      border-bottom: 1px solid #ff4040 !important;
+    }
+  }
+
+  &.noHeading .inputWrapper {
+    @include activeContainer();
+  }
+
+  &:focus-within {
+    &.boxShadow .inputWrapper {
+      @include activeContainer();
+    }
+
+    &.line .inputWrapper {
+      height: 65px;
+      border-bottom: 1px solid #ede4e8 !important;
+    }
+  }
+
+  &:not(:focus-within) {
+    &.noBorderBottom .inputWrapper {
+      border-bottom: unset !important;
+    }
+
+    .activeLabelText {
+      display: none;
+    }
+  }
+
+  &:focus-within .error {
+    display: none;
+  }
+}
+
+.error {
+  font-size: 12px;
+  line-height: 16px;
+  color: #ca6a6a;
+  user-select: none;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 14px;
+  position: relative;
+  padding-right: 8px;
+  padding-bottom: 4px;
+
+  .labelText {
+    position: absolute;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    pointer-events: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #b79ba6;
+    will-change: transform;
+    transition: transform 0.2s ease-out;
+
+    &.default {
+      border-bottom: 1px solid #ede4e8;
+    }
+  }
+
+  .noHeadingLabel {
+    display: block !important;
+    @include activeLabel();
+  }
+
+  &:focus-within {
+    .labelText {
+      @include activeLabel();
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  font-size: 14px;
+  caret-color: #acacac;
+  background: transparent;
+  color: #383f43;
+  outline: none;
+
+  &:focus {
+    background: transparent;
+    border: 1px solid transparent;
+  }
+}

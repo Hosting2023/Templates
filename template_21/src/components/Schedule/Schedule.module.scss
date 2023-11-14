@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+.schedule {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  button {
+    @include orangeButton();
+  }
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}

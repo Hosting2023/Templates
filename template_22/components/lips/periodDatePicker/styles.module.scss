@@ -1,0 +1,79 @@
+@use 'styles' as *;
+
+.wrapper {
+  z-index: $z-index-nav;
+  position: absolute;
+  bottom: 58px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (max-width: 768px) {
+    bottom: 38px;
+    right: 0;
+  }
+}
+
+.calendarWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background: #ffe9f2;
+  border-radius: 4px;
+  width: 55px;
+  height: 42px;
+
+  @media (max-width: 768px) {
+    width: 42px;
+    height: 32px;
+  }
+}
+
+.calendar {
+  width: 14px;
+
+  path {
+    fill: #a0627b;
+  }
+}
+
+.caption {
+  display: grid;
+  grid-template-columns: 50% 0 50%;
+  align-items: center;
+  justify-items: center;
+}
+
+.pickersWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.text {
+  font-size: 21px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 36px;
+}
+
+.button {
+  background: #ffffff;
+  box-shadow: 2px 1px 4px rgba(99, 93, 96, 0.3);
+  color: #383f43;
+}
+
+.textColor {
+  color: #a0627b;
+  font-weight: 700;
+}

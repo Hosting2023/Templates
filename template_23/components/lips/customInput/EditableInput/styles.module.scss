@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  padding: 16px 50px 10px 15px;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.focusContainer {
+  border-bottom: 1px solid #ede4e8;
+  padding-top: 10px;
+  height: 65px;
+}
+
+.withoutFocusContainer {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  background: #ffffff;
+  height: 45px;
+}
+
+.inputWrapper {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  height: fit-content;
+}
+
+.input {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.arrowWrapper {
+  position: absolute;
+  right: 20px;
+  transition: all 0.3s ease-out;
+}
+
+.arrowPosition {
+  top: 10px;
+}
+
+.arrow {
+  transform: rotate(180deg);
+}
+
+.error {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  text-align: end;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ca6a6a;
+}
+
+.errorPosition {
+  top: 15px;
+}

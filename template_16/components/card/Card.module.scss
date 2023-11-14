@@ -1,0 +1,56 @@
+.card {
+    margin-right: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 29px;
+    width: 412px;
+    height: 339px;
+    border-radius: 50px;
+    background: #fff;
+
+    >div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+
+        >img {
+            width: 40%;
+        }
+
+        >h2 {
+            font-size: 35px;
+            font-weight: 600;
+            color: #1B1B1B;
+        }
+    }
+
+    >span {
+        width: 314px;
+        font-family: Didact Gothic;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        color: #1B1B1B;
+    }
+}
+
+@media (max-width: 1600px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin-left: 35px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .card {
+        margin-left: 0px;
+    }
+}

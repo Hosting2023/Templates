@@ -1,0 +1,12 @@
+services:
+  web:
+    image: ezrababait-web
+    container_name: web
+    build:
+      context: .
+      target: runner
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env.production
+    restart: always

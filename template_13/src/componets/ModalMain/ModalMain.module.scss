@@ -1,0 +1,66 @@
+@import "../../styles/vars.scss";
+
+.content_main {
+   margin-top: 50px;
+
+   .orText {
+      position: relative;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1;
+      margin: 20px 0;
+   }
+
+   .orText::before,
+   .orText::after {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background-color: black;
+      vertical-align: middle;
+   }
+
+   .orText::before {
+      margin-right: 10px;
+   }
+
+   .orText::after {
+      margin-left: 10px;
+   }
+
+   .icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      margin-top: 20px;
+
+
+
+      img {
+         width: 40px;
+         cursor: pointer;
+         height: 40px;
+      }
+   }
+
+   .modal-register {
+      font-size: $FONT_MAIN;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+   }
+
+   .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0 auto;
+      margin-top: 70px;
+
+      max-width: 120px;
+
+
+   }
+}

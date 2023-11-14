@@ -1,0 +1,152 @@
+@import "../../app/[locale]/variables.scss";
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    padding: 41px 0px 99px 0px;
+
+    &__container {
+        margin-bottom: 131px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+
+        .slider__container_item {
+            flex-basis: 50%;
+            flex-shrink: 0;
+            margin-right: 137px;
+
+            &:last-child {
+                padding-right: 58px;
+            }
+
+            &_he {
+                margin-right: 137px;
+
+                &:last-child {
+                    padding-left: 116px;
+                }
+            }
+        }
+
+        &_inner {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 0;
+            padding-left: 294px;
+
+            &_he {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 0;
+            }
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__reviews {
+        padding-left: 161px;
+
+        &_he {
+            padding-right: 172px;
+        }
+    }
+
+    &__btn {
+        align-self: center;
+        padding: 20px 97px;
+        border: 1px solid $black;
+        background: $white;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        opacity: 0.3;
+    }
+
+    @media only screen and (max-width: 833px) {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        &__container {
+            margin-bottom: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+
+            .slider__container_item {
+                flex-basis: 50%;
+                flex-shrink: 0;
+                margin-right: 0px;
+
+                &:last-child {
+                    padding-right: 0px;
+                }
+
+                &_he {
+                    margin-right: 0px;
+
+                    &:last-child {
+                        padding-left: 0px;
+                    }
+                }
+            }
+
+            &_inner {
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                width: 100%;
+                padding: 0px 80px;
+                flex-direction: column;
+                overflow-y: auto;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                &_he {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    padding: 0px 80px;
+                    flex-direction: column;
+                    overflow-y: auto;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+            }
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__reviews {
+            padding-left: 20px;
+
+            &_he {
+                padding-right: 20px;
+            }
+        }
+
+        &__btn {
+            align-self: center;
+            padding: 10px 30px;
+            border: 0.5px solid $black;
+            background: $white;
+            font-size: 8px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            opacity: 0.3;
+        }
+    }
+}

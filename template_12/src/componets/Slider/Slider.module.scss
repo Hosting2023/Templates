@@ -1,0 +1,44 @@
+@import "../../styles/vars.scss";
+
+.sliderContainer {
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.slideButton {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: opacity 0.3s ease-in-out;
+   border-radius: 10px;
+   border: 1px solid black;
+   margin-left: 10px;
+
+   &.left {
+      transform: rotate(180deg);
+      margin-right: 10px;
+
+   }
+
+   &:hover {
+      opacity: 0.7;
+   }
+}
+
+.slider {
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+
+
+   .slides {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+      gap: 10px;
+   }
+}

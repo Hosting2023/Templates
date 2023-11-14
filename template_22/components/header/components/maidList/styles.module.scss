@@ -1,0 +1,106 @@
+.container {
+  max-width: 1920px;
+  height: 960px;
+  position: relative;
+  background-image: url('../../../../public/assets/imagesBack/image_344.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 390px) {
+    max-width: 390px;
+    height: 195px;
+  }
+
+}
+
+@media (max-width: 390px) {
+  .container {
+    max-width: 390px;
+    height: 195px;
+  }
+  .cont1{
+    font-size: 8px!important;
+  }
+  .cont2{
+    font-size: 24px!important;
+  }
+  .cont3{
+    font-size: 10px!important;
+  }
+  .button {
+    font-size: 8px !important;
+    margin-top: 37px !important;
+    padding: 5px 20px !important;
+  }
+}
+
+.menuBurger{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 5px;
+  left: 354px;
+  padding: 6px 3px 6px 3px;
+  background-color: black;
+
+  @media (min-width: 391px) {
+    display: none;
+  }
+
+}
+
+.containerText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont1 {
+  text-align: center;
+  color: #FFF;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cont2 {
+  text-align: center;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.cont3 {
+  text-align: center;
+  color: #FFF;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.button {
+  margin-top: 90px;
+  padding: 10px 97px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Red Hat Text', sans-serif;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: lightgrey;
+  }
+}
+

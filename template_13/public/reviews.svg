@@ -1,0 +1,17 @@
+<svg width="962" height="2229" viewBox="0 0 962 2229" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_300_463)">
+<ellipse cx="807.5" cy="1152.5" rx="851.5" ry="506.5" transform="rotate(90 807.5 1152.5)" fill="url(#paint0_linear_300_463)" fill-opacity="0.5"/>
+<path d="M300.5 1152.5C300.5 1387.71 357.209 1600.68 448.921 1754.86C540.626 1909.03 667.387 2004.5 807.5 2004.5C947.613 2004.5 1074.37 1909.03 1166.08 1754.86C1257.79 1600.68 1314.5 1387.71 1314.5 1152.5C1314.5 917.29 1257.79 704.324 1166.08 550.143C1074.37 395.973 947.613 300.5 807.5 300.5C667.387 300.5 540.626 395.973 448.921 550.143C357.209 704.324 300.5 917.29 300.5 1152.5Z" stroke="white"/>
+</g>
+<defs>
+<filter id="filter0_f_300_463" x="0" y="0" width="1615" height="2305" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_300_463"/>
+</filter>
+<linearGradient id="paint0_linear_300_463" x1="-8.56074" y1="1151.93" x2="1679.59" y2="1195.09" gradientUnits="userSpaceOnUse">
+<stop stop-color="#36C8DC" stop-opacity="0.7"/>
+<stop offset="1" stop-color="#F839DA" stop-opacity="0.7"/>
+</linearGradient>
+</defs>
+</svg>

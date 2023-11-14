@@ -1,0 +1,75 @@
+@import "../../app/[locale]/variables.scss";
+
+.benefitItem {
+    position: relative;
+
+    &__square {
+        width: 130px;
+        height: 130px;
+        background: $green;
+    }
+
+    &__title {
+        position: absolute;
+        top: 80px;
+        left: 45px;
+        width: max-content;
+        color: $black;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &_he {
+            position: absolute;
+            top: 80px;
+            right: 45px;
+            width: max-content;
+            color: $black;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    @media only screen and (max-width: 1280px) {
+        position: relative;
+
+        &__square {
+            width: 70px;
+            height: 70px;
+        }
+
+        &__title {
+            top: 45px;
+            left: 35px;
+            font-size: 18px;
+
+            &_he {
+                top: 45px;
+                right: 35px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 833px) {
+        position: relative;
+
+        &__square {
+            width: 45px;
+            height: 45px;
+        }
+
+        &__title {
+            top: 31px;
+            left: 19px;
+            font-size: 10px;
+
+            &_he {
+                top: 31px;
+                right: 19px;
+                font-size: 10px;
+            }
+        }
+    }
+}

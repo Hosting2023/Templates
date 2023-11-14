@@ -1,0 +1,73 @@
+.input {
+  box-shadow: none !important;
+}
+
+.disabled {
+  opacity: 0.7;
+}
+
+.inputCode {
+  box-shadow: none !important;
+  letter-spacing: 6px;
+  font-weight: 700;
+  font-size: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.button {
+  background: #ffffff;
+  box-shadow: 2px 1px 4px rgba(1, 1, 1, 0.3);
+}
+
+.caption {
+  color: #a0627b;
+  margin-bottom: 30px;
+}
+.emailWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  align-items: center;
+}
+
+.emailWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  align-items: center;
+}
+
+.icon,
+.button {
+  justify-self: end;
+}
+
+@media (max-width: 767px) {
+  .emailWrapper > .buttonWrapper,
+  .icon {
+    justify-self: end;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px !important;
+  width: 20px !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 4px rgba(99, 93, 96, 0.2) !important;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  // margin: 20px 20px 10px 0;
+}

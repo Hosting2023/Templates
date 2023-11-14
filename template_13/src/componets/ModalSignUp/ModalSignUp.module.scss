@@ -1,0 +1,268 @@
+@import "../../styles/vars.scss";
+
+.content_singup {
+   .calendar-container {
+
+      border-radius: 10px;
+      width: 100%;
+      max-width: 260px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      position: relative;
+
+   }
+
+   .calendar-container::after {
+      content: "";
+      position: absolute;
+      bottom:
+         -20px;
+      right: 10px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: white transparent transparent transparent;
+
+
+   }
+
+   .month-year {
+      font-size: 18px;
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 2px solid #FCF8F6;
+   }
+
+   .dates-container {
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+
+   }
+
+   .date-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+      color: black;
+      transition: font-size 0.3s ease;
+
+   }
+
+   .today {
+      background-color: red;
+      color: white;
+   }
+
+
+   .date-box .day-details {
+      font-size: 10px;
+      height: 20px;
+   }
+
+   .date-box:nth-child(3) .day-details {
+      font-size: 16px;
+      background-color: #FCF8F6;
+      color: black;
+      width: 100%;
+   }
+
+   .date-box:nth-child(3n+2) .day-details {
+      font-size: 14px;
+   }
+
+   .date-box:nth-child(3n+3) .day-details {
+      font-size: 16px;
+      background-color: #FCF8F6;
+      color: black;
+
+      font-weight: bold;
+   }
+
+   .date-box:nth-child(3n+4) .day-details {
+      font-size: 12px;
+   }
+
+   .date-box:nth-child(3n+5) .day-details {
+      font-size: 10px;
+   }
+
+   .date-buttons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+   }
+
+   .prev-button,
+   .next-button {
+      background-color: #FCF8F6;
+
+      padding: 10px 0px;
+      border: none;
+      font-weight: bold;
+      margin: 10px auto;
+      max-width: 90px;
+      border-radius: 15px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 14px;
+      color: black;
+      font-weight: 400;
+      border: 1px solid black;
+   }
+
+   .prev-button {
+      margin-right: auto;
+   }
+
+   .next-button {
+      margin-left: auto;
+   }
+
+   margin-top: 50px;
+
+   .modal-register {
+      font-size: $FONT_MAIN;
+      text-align: center;
+
+
+   }
+
+   .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 300px;
+      margin: 0 auto;
+      margin-top: 20px;
+      position: relative;
+
+      .forgot {
+         font-size: 14px;
+         color: black;
+         cursor: pointer;
+      }
+
+      .block_date {
+         position: relative;
+         background-color: $COLOR_BROWN;
+
+         .error-message {
+
+            position: absolute;
+            right: 10px;
+
+
+            background-color: white;
+            color: red;
+            font-size: 13px;
+
+            top: 50%;
+            transform: translateY(-50%);
+         }
+
+         .calendar_hide {
+            position: absolute;
+            bottom: 125%;
+            right: 0;
+         }
+      }
+
+      .date {
+         color: black;
+         cursor: pointer;
+         background-color: $COLOR_BROWN;
+         padding: 8px;
+         font-size: $FONT_MAIN_SMALL;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+
+
+
+         .img {
+            width: 25px;
+            height: 25px;
+
+            img {
+               width: 100%;
+            }
+         }
+      }
+
+      .input-container {
+         position: relative;
+
+         input {
+            background-color: $COLOR_BROWN;
+            border-radius: 0px;
+            padding: 10px;
+            font-size: $FONT_MAIN_SMALL;
+            width: 100%;
+
+         }
+
+         &.error-input {
+            input {
+
+               padding-right: 140px;
+            }
+         }
+
+         .error-message {
+            position: absolute;
+            right: 5px;
+            color: red;
+            padding-right: 10px;
+            font-size: 13px;
+            top: 50%;
+            transform: translateY(-50%);
+         }
+
+      }
+
+
+      .code {
+         text-align: center;
+         font-size: 16px;
+      }
+
+      .key {
+         font-size: 16px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 10px
+      }
+
+      .button {
+         margin: 0 auto;
+
+
+         padding: 5px 16px;
+         background-color: transparent;
+         font-size: $FONT_MAIN;
+         transition: 0.4s;
+         border: 1px solid $COLOR_PURPLE;
+         border-radius: 5px;
+         color: $COLOR_PURPLE;
+         box-shadow: 4px 1px $COLOR_PURPLE;
+      }
+
+
+   }
+}

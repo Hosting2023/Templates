@@ -1,0 +1,65 @@
+.buttonRow {
+  margin: 50px 10%;
+  @media (max-width: 390px) {
+    margin: 15px 0;
+  }
+
+
+.button {
+    height: 105px;
+    width: 240px;
+    background-color: black;
+    color: white;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid #000;
+    position: relative;
+    @media (max-width: 390px) {
+      height: 33px;
+      width: 75px;
+      margin: 0 5px;
+      padding-right: 0;
+      padding-left: 0;
+
+
+    }
+
+  }
+
+  .button.active {
+    background-color: white;
+    color: black;
+    border: 1px solid #000;
+  }
+
+  .textButton{
+    width: 135px;
+    height: 80px;
+    text-align: center;
+    font-family: Red Hat Text, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 390px) {
+      font-size: 9px;
+      width: 39px;
+      height: 26px;
+    }
+  }
+}
+
+.redButtonRow{
+  border: 1px solid red;
+  padding: 9px;
+}
+
+
+
+

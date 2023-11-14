@@ -1,0 +1,220 @@
+@import "../../styles/vars.scss";
+
+.reviews {
+   margin-top: 50px;
+   position: relative;
+
+   .block_down {
+
+      width: 300px;
+      height: 80px;
+      border: 3px solid $COLOR_YELLOW;
+      position: absolute;
+      bottom: -100px;
+      left: -150px;
+
+      z-index: -1;
+
+      .squire {
+         width: 20px;
+         height: 20px;
+         background-color: green;
+         position: absolute;
+      }
+
+      .top_left,
+      .top_right {
+         top: -12px;
+      }
+
+      .top_left,
+      .bottom_left {
+         left: -12px;
+      }
+
+      .top_right,
+      .bottom_right {
+         right: -12px;
+      }
+
+      .bottom_left,
+      .bottom_right {
+         bottom: -12px;
+      }
+
+   }
+
+   .wrapper {
+      .reviews_content {
+         display: flex;
+         gap: 10px;
+
+         .reviews_content_slider {
+            width: 50%;
+         }
+
+         .reviews_content_text {
+            width: 50%;
+            position: relative;
+
+
+            .text {
+               max-width: 300px;
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               text-align: center;
+               color: $COLOR_GREEN;
+            }
+         }
+      }
+   }
+}
+
+@media(max-width:900px) {
+   .reviews {
+      margin-top: 50px;
+      position: relative;
+
+      .block_down {
+
+         width: 300px;
+         height: 80px;
+         border: 3px solid $COLOR_YELLOW;
+         position: absolute;
+         bottom: -100px;
+         left: -150px;
+
+         z-index: -1;
+
+         .squire {
+            width: 15px;
+            height: 15px;
+            background-color: green;
+            position: absolute;
+         }
+
+         .top_left,
+         .top_right {
+            top: -12px;
+         }
+
+         .top_left,
+         .bottom_left {
+            left: -12px;
+         }
+
+         .top_right,
+         .bottom_right {
+            right: -12px;
+         }
+
+         .bottom_left,
+         .bottom_right {
+            bottom: -12px;
+         }
+
+      }
+
+      .wrapper {
+         .reviews_content {
+            display: flex;
+            gap: 10px;
+
+            .reviews_content_slider {
+               width: 50%;
+            }
+
+            .reviews_content_text {
+               width: 50%;
+               position: relative;
+
+
+               .text {
+                  max-width: 300px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                  text-align: center;
+                  color: $COLOR_GREEN;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media(max-width:900px) {
+   .reviews {
+      margin-top: 50px;
+      position: relative;
+
+      .block_down {
+
+         width: 300px;
+         height: 80px;
+         border: 3px solid $COLOR_YELLOW;
+         position: absolute;
+         bottom: -100px;
+         left: -150px;
+
+         z-index: -1;
+
+         .squire {
+            width: 15px;
+            height: 15px;
+            background-color: green;
+            position: absolute;
+         }
+
+         .top_left,
+         .top_right {
+            top: -12px;
+         }
+
+         .top_left,
+         .bottom_left {
+            left: -12px;
+         }
+
+         .top_right,
+         .bottom_right {
+            right: -12px;
+         }
+
+         .bottom_left,
+         .bottom_right {
+            bottom: -12px;
+         }
+
+      }
+
+      .wrapper {
+         .reviews_content {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+
+            .reviews_content_slider {
+               width: 100%;
+            }
+
+            .reviews_content_text {
+
+               width: 100%;
+               position: relative;
+
+
+               .text {
+                  max-width: 100%; display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                  text-align: center;
+                  color: $COLOR_GREEN;
+               }
+            }
+         }
+      }
+   }
+}

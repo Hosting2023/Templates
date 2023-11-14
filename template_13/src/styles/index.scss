@@ -1,0 +1,159 @@
+@import "./vars.scss";
+
+@font-face {
+   font-family: 'HeadlandOne';
+   src: url('./Font/HeadlandOne-Regular.ttf');
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+   font-size: $FONT_MAIN;
+   font-family: 'HeadlandOne';
+   line-height: normal;
+   color: $COLOR_PURPLE;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+
+.wrapper {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1150px;
+   padding: 0 15px;
+}
+
+.btn {
+   padding: 10px 20px;
+   background-color: transparent;
+   font-size: $FONT_MAIN;
+   transition: 0.4s;
+   border: 1px solid $COLOR_PURPLE;
+   border-radius: 5px;
+   color: $COLOR_PURPLE;
+   box-shadow: 4px 1px $COLOR_PURPLE;
+   ;
+
+}
+
+a {
+   color: black;
+}
+
+.title {
+   font-size: $FONT_TITLE;
+   font-weight: bold;
+}
+
+
+
+@media(max-width:750px) {
+   body {
+      font-size: $FONT_MAIN_TABLET;
+   }
+
+
+   .wrapper {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1150px;
+      padding: 0 15px;
+   }
+
+   .btn {
+      padding: 7px 15px;
+      font-size: $FONT_MAIN_TABLET
+   }
+
+   .title {
+      font-size: $FONT_TITLE_TABLET;
+   }
+
+
+}
+
+@media(max-width:500px) {
+   body {
+      font-size: $FONT_MAIN_MOBILE;
+   }
+
+
+   .wrapper {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1150px;
+      padding: 0 15px;
+   }
+
+   .btn {
+      box-shadow: none;
+      border-radius: 10px;
+
+      padding: 7px 15px;
+      font-size: $FONT_MAIN_MOBILE;
+   }
+
+   .title {
+      font-size: $FONT_TITLE_MOBILE;
+   }
+
+
+}
+
+@media(max-width:400px) {
+   body {
+      font-size: 10px;
+   }
+
+
+   .wrapper {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1150px;
+      padding: 0 15px;
+   }
+
+   .btn {
+      box-shadow: none;
+      border-radius: 10px;
+
+      padding: 7px 15px;
+      font-size: 10px;
+   }
+
+   .title {
+      font-size: $FONT_TITLE_MOBILE;
+   }
+
+
+}
+
+@media(max-width:380px) {
+
+
+   .wrapper {
+      padding: 0 10px;
+   }
+
+
+}
+
+
+@media(max-width:320px) {
+
+
+   body {
+      width: 320px
+   }
+
+
+}

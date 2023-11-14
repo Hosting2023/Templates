@@ -1,0 +1,13 @@
+.transitionEnter {
+  transition: all 0.3s ease-out;
+}
+
+.transitionEnterTo {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.transitionLeaveTo {
+  transform: scale(0.95);
+  opacity: 0;
+}

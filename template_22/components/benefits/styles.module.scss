@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400&display=swap');
+
+.columns {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 14px;
+}
+
+@media (max-width: 390px) {
+  .columns {
+    display: block;
+  }
+
+}
+
+.column {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  @media (max-width: 390px) {
+    width: 187px;
+    padding: 5px;
+    margin: auto;
+  }
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imageContainer {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: auto;
+  @media (max-width: 390px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.imageContainer img {
+  width: 40%;
+  height: auto;
+}
+
+.title {
+  margin-top: 30px;
+  color: #000;
+  font-family: Red Hat Text, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  @media (max-width: 390px) {
+    font-size: 9px;
+    margin-top: 7px;
+  }
+}
+
+.text {
+  margin-top: 20px;
+  color: #000;
+  text-align: center;
+  font-family: Red Hat Text, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  @media (max-width: 390px) {
+    font-size: 7px;
+    margin-top: 7px;
+  }
+}

@@ -1,0 +1,39 @@
+.wrapper {
+  // width: 1200px;
+  margin: 3% auto;
+
+  .item {
+    display: flex;
+    align-items: center;
+    margin: 2% auto;
+    width: 300px;
+
+    p {
+      font-size: 30px;
+      font-weight: 400;
+      margin-left: 3%;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .wrapper {
+    display: flex;
+    width: auto;
+    justify-content: center;
+  }
+
+  .wrapper .item {
+    width: max-content;
+  }
+
+
+  .wrapper .item p {
+    font-size: 10px;
+  }
+
+  .wrapper .item img {
+    width: 50%;
+    height: auto;
+  }
+}

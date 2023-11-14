@@ -1,0 +1,67 @@
+@import '../../styles/variables.scss';
+
+.reviews {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  align-self: center;
+  width: 70%;
+  margin-top: 1.5rem;
+}
+.review {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 56%;
+  align-items: flex-end;
+  background-color: $backgroundGray;
+  padding: 1rem 2rem 2rem 1rem;
+  margin-bottom: 10rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.picture {
+  position: absolute;
+  top: -25%;
+  left: -50%;
+}
+
+.pictureCentral {
+  position: absolute;
+  top: -25%;
+  right: -48%;
+}
+.info {
+  position: relative;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.author {
+  @include HeeboMedium();
+  font-size: 30px;
+  line-height: 44px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.central {
+  position: absolute;
+  top: 30%;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+.comment {
+  @include PTMonoSmall();
+  font-size: 20px;
+  line-height: 20px;
+  text-align: justify;
+}

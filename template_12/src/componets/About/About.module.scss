@@ -1,0 +1,227 @@
+@import "../../styles/vars.scss";
+
+
+
+.about {
+   overflow: hidden;
+   padding-top: 60px;
+
+   .wrapper {
+      padding-left: 50px;
+
+      .about_content {
+         display: flex;
+         gap: 40px;
+
+         .about_content_img {
+            width: 40%;
+            position: relative;
+
+            .girl {
+               display: none;
+            }
+
+            .things {
+               width: 100%;
+               object-fit: cover;
+               height: 100%;
+            }
+
+            .square {
+               position: absolute;
+               width: 40px;
+               left: -70px;
+               bottom: 0px;
+            }
+
+         }
+
+         .about_content_text {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+         }
+
+      }
+   }
+}
+
+@media (max-width:945px) {
+   .about {
+      padding-top: 60px;
+
+      .wrapper {
+         padding-left: 30px;
+
+         .about_content {
+            display: flex;
+            gap: 40px;
+
+            .about_content_img {
+               width: 40%;
+               position: relative;
+
+               .things {
+                  width: 100%;
+                  object-fit: cover;
+                  height: 100%;
+               }
+
+               .square {
+                  position: absolute;
+                  width: 40px;
+                  left: -40px;
+                  bottom: 0px;
+               }
+
+            }
+
+            .about_content_text {
+               width: 60%;
+               display: flex;
+               flex-direction: column;
+               gap: 30px;
+            }
+
+         }
+      }
+   }
+}
+
+@media (max-width:730px) {
+   .about {
+      padding-top: 60px;
+
+      .wrapper {
+         padding: 0 20px;
+
+         .about_content {
+            display: flex;
+            gap: 0px;
+            flex-direction: row-reverse;
+            justify-content: start;
+
+            .about_content_img {
+               width: 45%;
+               position: relative;
+               display: flex;
+               justify-content: center;
+
+               z-index: 10;
+
+               .things {
+                  width: 100%;
+                  object-fit: cover;
+                  height: 100%;
+                  display: none;
+               }
+
+               .girl {
+                  z-index: 10;
+                  display: block;
+                  height: 100%;
+                  max-height: 70%;
+               }
+
+               .circle {
+
+                  max-width: 250px;
+                  height: 250px;
+                  border-radius: 50%;
+                  background-color: $COLOR_YELLOW;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+               }
+
+               .square {
+                  position: absolute;
+                  width: 0px;
+                  left: -40px;
+                  bottom: 0px;
+               }
+
+            }
+
+            .about_content_text {
+               width: 55%;
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+            }
+
+         }
+      }
+   }
+}
+
+
+@media (max-width:430px) {
+   .about {
+      padding-top: 60px;
+
+      .wrapper {
+         padding: 0 10px;
+
+         .about_content {
+            display: flex;
+            gap: 0px;
+            flex-direction: row-reverse;
+            justify-content: start;
+
+            .about_content_img {
+               width: 40%;
+               position: relative;
+               display: flex;
+               justify-content: center;
+
+               z-index: 10;
+
+               .things {
+                  width: 100%;
+                  object-fit: cover;
+                  height: 100%;
+                  display: none;
+               }
+
+               .girl {
+                  z-index: 10;
+                  display: block;
+                  height: 100%;
+                  max-height: 70%;
+               }
+
+               .circle {
+
+                  max-width: 130px;
+                  height: 139px;
+                  border-radius: 50%;
+                  background-color: $COLOR_YELLOW;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+               }
+
+               .square {
+                  position: absolute;
+                  width: 0px;
+                  left: -40px;
+                  bottom: 0px;
+               }
+
+            }
+
+            .about_content_text {
+               width: 60%;
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+            }
+
+         }
+      }
+   }
+}

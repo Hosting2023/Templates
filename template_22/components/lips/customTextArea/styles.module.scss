@@ -1,0 +1,113 @@
+.textarea {
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  caret-color: #acacac;
+  background: transparent;
+  width: 100%;
+  color: #383f43;
+  font-size: 14px;
+  line-height: 19px;
+  padding-top: 20px;
+  border-bottom: 1px solid #ede4e8;
+
+  &:focus {
+    background: transparent;
+    border: 1px solid transparent;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 328px;
+  position: relative;
+  padding: 16px 50px 10px 15px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  border-radius: 12px;
+  background: #fff7f9;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  &:focus-within {
+    background: #ffffff;
+  }
+}
+
+.container:focus-within {
+  padding-top: 25px;
+  border-bottom: 1px solid #ede4e8;
+}
+
+.label {
+  padding-bottom: 4px;
+  position: absolute;
+  pointer-events: none;
+  font-size: 12px;
+  line-height: 16px;
+  color: #b79ba6;
+  transition: all 0.3s ease-out;
+  top: 5px;
+  left: 15px;
+  transform: none;
+  font-size: 12px;
+  transition: all 0.3s ease-out;
+}
+
+.hiddenLabel {
+  display: none;
+}
+
+.container:focus-within .arrowWrapper {
+  top: 10px;
+}
+
+.errorContainer {
+  border: 0.5px solid #ff4040;
+}
+
+.arrow {
+  transition: transform 0.3s ease-out;
+  transform-origin: center;
+}
+
+.error {
+  display: block;
+  margin: 8px 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ca6a6a;
+  text-align: right;
+}
+
+.arrowWrapper {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  transition: all 0.3s ease-out;
+}
+
+.container:focus-within .arrow {
+  transform: rotate(180deg);
+}
+
+.arrowRotated {
+  transform: rotate(180deg);
+}
+
+.textareaInner {
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  caret-color: #acacac;
+  background: transparent;
+  width: 100%;
+  color: #383f43;
+  font-size: 14px;
+  line-height: 19px;
+
+  &:focus {
+    background: transparent;
+    border: 1px solid transparent;
+  }
+}

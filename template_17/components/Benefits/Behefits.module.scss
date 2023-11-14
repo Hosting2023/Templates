@@ -1,0 +1,141 @@
+@import "../../app/[locale]/variables.scss";
+
+.benefits {
+    background: $white;
+    padding: 110px 282px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 1920px;
+        margin: 0 auto;
+
+        &_line1 {
+            display: flex;
+            align-self: flex-start;
+            gap: 534px;
+            margin-bottom: 76px;
+
+            &_he {
+                display: flex;
+                align-self: flex-end;
+                gap: 534px;
+                margin-bottom: 76px;
+            }
+        }
+
+        &_line2 {
+            display: flex;
+            align-self: flex-end;
+            gap: 634px;
+            padding-right: 117px;
+
+            &_he {
+                display: flex;
+                align-self: flex-start;
+                gap: 634px;
+                padding-right: 117px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1600px) {
+        padding: 70px 80px;
+
+        &__container {
+            &_line1 {
+                display: flex;
+                align-self: normal;
+                gap: 600px;
+                margin-bottom: 50px;
+
+                &_he {
+                    display: flex;
+                    align-self: normal;
+                    gap: 600px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            &_line2 {
+                display: flex;
+                align-self: normal;
+                gap: 600px;
+
+                &_he {
+                    display: flex;
+                    align-self: normal;
+                    gap: 600px;
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        padding: 70px 80px;
+
+        &__container {
+            &_line1 {
+                display: flex;
+                align-self: normal;
+                gap: 370px;
+                margin-bottom: 50px;
+
+                &_he {
+                    display: flex;
+                    align-self: normal;
+                    gap: 370px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            &_line2 {
+                display: flex;
+                align-self: normal;
+                gap: 370px;
+
+                &_he {
+                    display: flex;
+                    align-self: normal;
+                    gap: 370px;
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 833px) {
+        padding: 48px 30px 54px;
+
+        &__container {
+            &_line1 {
+                display: flex;
+                align-self: normal;
+                gap: 150px;
+                margin-bottom: 34px;
+
+                &_he {
+                    display: flex;
+                    align-self: normal;
+                    gap: 150px;
+                    margin-bottom: 34px;
+                }
+            }
+
+            &_line2 {
+                display: flex;
+                align-self: normal;
+                gap: 150px;
+
+                &_he {
+                    display: flex;
+                    align-self: normal;
+                    gap: 150px;
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}

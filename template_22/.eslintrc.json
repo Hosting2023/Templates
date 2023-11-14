@@ -1,0 +1,118 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "simple-import-sort",
+    "unused-imports",
+    "autofix"
+  ],
+  "rules": {
+    "max-len": ["warn", 100],
+    "autofix/no-debugger": "error",
+    "react/prop-types": "off",
+    "arrow-body-style": ["error", "as-needed"],
+    "operator-linebreak": "off",
+    "implicit-arrow-linebreak": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "class-methods-use-this": "off",
+    "unused-imports/no-unused-imports": "error",
+    "eol-last": ["error", "always"],
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "react/require-default-props": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-curly-brace-presence": [
+      "error",
+      { "props": "never", "children": "never" }
+    ],
+    "react/function-component-definition": [
+      1,
+      {
+        "namedComponents": [
+          "function-declaration",
+          "function-expression",
+          "arrow-function"
+        ]
+      }
+    ],
+    // TODO: find better settings or remove this comment
+    "function-paren-newline": "off",
+
+    // TODO: remove this rules after fix all warnings
+    "no-param-reassign": [
+      "warn",
+      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+    ],
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "linebreak-style": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+    //
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        // TODO: remove this rules after fix all warnings
+        "object-curly-newline": "off",
+        "react/no-unused-prop-types": "warn",
+        "react/no-array-index-key": "warn",
+        "react/button-has-type": "warn",
+        "@typescript-eslint/no-shadow": "warn",
+        "jsx-a11y/anchor-is-valid": "warn",
+        "jsx-a11y/label-has-associated-control": "warn",
+        //
+
+        "react/destructuring-assignment": "warn",
+        "react/jsx-props-no-spreading": "warn",
+        "simple-import-sort/imports": [
+          "warn",
+          {
+            "groups": [
+              // Packages `react` related packages come first.
+              ["^react", "^@?\\w"],
+              // Internal packages.
+              ["^(@|components)(/.*|$)"],
+              // Side effect imports.
+              ["^\\u0000"],
+              // Parent imports. Put `..` last.
+              ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+              // Other relative imports. Put same-folder imports and `.` last.
+              ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+              // Style imports.
+              ["^.+\\.?(css)$"]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

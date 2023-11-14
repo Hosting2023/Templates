@@ -1,0 +1,52 @@
+@import "../../styles/vars.scss";
+
+.question {
+   margin-top: 50px;
+
+   .wrapper {
+      .line {
+         width: 70%;
+         margin: 0 auto;
+         height: 1px;
+         background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 10%, black 15%, black 85%, rgba(0, 0, 0, 0.1) 90%);
+         margin-top: 90px;
+      }
+
+      .title {
+         text-align: center;
+         font-size: $MAIN_TEXT_SIZE_MIDDLE;
+         text-transform: uppercase;
+         font-weight: bold;
+      }
+
+      .question_content {
+         max-width: 1000px;
+         margin: 0 auto;
+         margin-top: 40px;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+      }
+   }
+}
+
+
+@media (max-width:960px) {
+   .question .wrapper .title {
+      text-align: center;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: bold;
+   }
+}
+
+@media (max-width: 560px) {
+   .question .wrapper .title {
+      text-align: center;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      font-weight: bold;
+   }
+
+
+}
