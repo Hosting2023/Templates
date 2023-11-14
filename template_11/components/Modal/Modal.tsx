@@ -1,7 +1,7 @@
 import React, { ReactNode, useState, useEffect, useRef } from 'react';
 import styles from './Modal.module.scss';
 import Image from 'next/image';
-import close from '@/public/Close.svg';
+import close from '@/public/close.svg';
 type ModalProps = {
    open?: boolean;
    onClose: () => void;
